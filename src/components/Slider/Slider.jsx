@@ -2,21 +2,25 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
-import "./Slider.css"
+import "./Slider.css";
+import slider1 from "../../asset/images/Slider_Img/slider1.jpg";
 
 const Slider = () => {
   const images = [
     {
-      src: "https://www.shutterstock.com/image-photo/baseball-team-smiling-by-chain-600w-2215700015.jpg",
-      alt: "First slide",
+      src:  slider1 ,
+      alt: "House Hold Products",
+      para: "Better Design & Right Choice For Kitchen",
     },
     {
       src: "https://www.shutterstock.com/image-photo/two-woman-communicate-their-friends-600w-2185303771.jpg",
-      alt: "Second slide",
+      alt: "Talukder Plastic Factory",
+      para: "OUR BRAND IS YOURS",
     },
     {
       src: "https://www.shutterstock.com/image-photo/young-beautiful-woman-watching-tv-600w-387198259.jpg",
-      alt: "Third slide",
+      alt: "Talukder Products Best In Quality",
+      para: "FOR QUALITY LIFE",
     },
   ];
 
@@ -84,8 +88,8 @@ const Slider = () => {
             <img className="d-block w-100" src={image.src} alt={image.alt} />
           </CSSTransition>
           <Carousel.Caption>
-            <h3>{image.alt} label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>{image.alt}</h3>
+            <p>{image.para}</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

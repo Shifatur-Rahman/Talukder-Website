@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./TopNavigation.css";
 import { Nav, Navbar } from "react-bootstrap";
-import { Link, NavLink  } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import logo1 from "../../asset/images/talukder-group01.png";
 // import logo2 from "../../asset/images/talukder-group02.png";
 import talukderLogo from "../../asset/images/talukderLogo.png";
 import Card from "react-bootstrap/Card";
 import { AiOutlineCaretDown } from "react-icons/ai";
 // import { Scrollbars } from 'react-custom-scrollbars';
-
 
 class TopNavigation extends Component {
   constructor(props) {
@@ -45,9 +44,9 @@ class TopNavigation extends Component {
     window.addEventListener("scroll", this.onScroll);
   };
 
-  refresh = () => {
-    window.location.reload(true);
-  }
+  // refresh = () => {
+  //   window.location.reload(true);
+  // }
 
   render() {
     return (
@@ -72,7 +71,11 @@ class TopNavigation extends Component {
               {/* Home */}
 
               <Nav.Link>
-                <NavLink className={this.state.navbarItem} to="/" activeClassName="active to-empty">
+                <NavLink
+                  className={this.state.navbarItem}
+                  to="/"
+                  activeClassName="active to-empty"
+                >
                   {" "}
                   Home
                 </NavLink>
@@ -82,12 +85,15 @@ class TopNavigation extends Component {
 
               <Nav.Link>
                 <div className="dropdown">
-                  <a className={this.state.navbarItem} to="#" activeClassName="active to-empty"
-                   onClick={() =>
-                    this.setState((prevState) => ({
-                      portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
-                    }))
-                  }
+                  <a
+                    className={this.state.navbarItem}
+                    to="#"
+                    activeClassName="active to-empty"
+                    onClick={() =>
+                      this.setState((prevState) => ({
+                        portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
+                      }))
+                    }
                   >
                     Portfolio
                     <AiOutlineCaretDown />
@@ -103,8 +109,10 @@ class TopNavigation extends Component {
 
               <Nav.Link>
                 <div className="dropdown">
-                  <a className={this.state.navbarItem} to="" activeClassName="active to-empty"
-                  
+                  <a
+                    className={this.state.navbarItem}
+                    to=""
+                    activeClassName="active to-empty"
                   >
                     Product & services
                     <AiOutlineCaretDown />
@@ -113,9 +121,7 @@ class TopNavigation extends Component {
                     <NavLink to="/product&services/advertisement">
                       Advertisement
                     </NavLink>
-                    <NavLink to="/portfolio">
-                      Product Gallery
-                    </NavLink>
+                    <NavLink to="/portfolio">Product Gallery</NavLink>
                   </div>
                 </div>
               </Nav.Link>
@@ -124,12 +130,15 @@ class TopNavigation extends Component {
 
               <Nav.Link>
                 <div className="dropdown">
-                  <a className={this.state.navbarItem} to="" activeClassName="active to-empty"
-                   onClick={() =>
-                    this.setState((prevState) => ({
-                      portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
-                    }))
-                  }
+                  <a
+                    className={this.state.navbarItem}
+                    to=""
+                    activeClassName="active to-empty"
+                    onClick={() =>
+                      this.setState((prevState) => ({
+                        portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
+                      }))
+                    }
                   >
                     Our clients
                     <AiOutlineCaretDown />
@@ -155,12 +164,15 @@ class TopNavigation extends Component {
 
               <Nav.Link>
                 <div className="dropdown">
-                  <a className={this.state.navbarItem} to="" activeClassName="active to-empty"
-                   onClick={() =>
-                    this.setState((prevState) => ({
-                      portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
-                    }))
-                  }
+                  <a
+                    className={this.state.navbarItem}
+                    to=""
+                    activeClassName="active to-empty"
+                    onClick={() =>
+                      this.setState((prevState) => ({
+                        portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
+                      }))
+                    }
                   >
                     About Us
                     <AiOutlineCaretDown />

@@ -19,13 +19,12 @@ class HomePage extends Component {
   render() {
     return (
       <>
-        {/* <TopNavigation title="Talukder Group" /> */}
-        {/* <TopBanner />
+        <TopNavigation title="Talukder Group" />
+        {/* <TopBanner /> */}
+        <Slider />
         <KnowUs />
         <Summary />
-        <NewsAndEvents /> */}
-
-        <Slider />
+        <NewsAndEvents />
         <Footer />
       </>
     );

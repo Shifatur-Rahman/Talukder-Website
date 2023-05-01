@@ -3,8 +3,8 @@
   -o-transition: background-color 400ms linear;
   -moz-transition: background-color 400ms linear;
   -webkit-transition: background-color 400ms linear;
-  /* background-color: rgba(0, 0, 0, 0.1); */
-  background-color: #f6fff8;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: #f6fff8; */
   padding: 1rem 5rem;
 }
 
@@ -57,9 +57,9 @@
   color: #2f3e46;
 }
 
-.navItemScroll:hover {  
-color: #130f40;
-transition: all ease 1s;
+.navItemScroll:hover {
+  color: #130f40;
+  transition: all ease 1s;
 }
 
 .navItem:hover {
@@ -115,7 +115,6 @@ transition: all ease 1s;
   border-bottom: 2px solid #02cde3;
   padding-bottom: 5px;
 }
-
 
 @media (max-width: 1300px) {
   .navigation {
@@ -189,7 +188,7 @@ transition: all ease 1s;
   .navItemScroll {
     font-size: 12px;
   }
-  .navbar-toggler-icon{
+  .navbar-toggler-icon {
     font-size: 18px;
   }
   .dropdown-content {
