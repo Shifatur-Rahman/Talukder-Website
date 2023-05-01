@@ -1,0 +1,130 @@
+.topFixedBanner {
+  background-image: url(../../asset/images/slider.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .topFixedBanner {
+  background-image: url(../../asset/images/slider.jpg);
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .topBannerOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+} */
+
+.topBannerOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.topContent {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+}
+
+.topBannerTitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: -1px 0 #0097e6, 0 1px #0097e6, 1px 0 #0097e6, 0 -1px #0097e6;
+}
+
+.topBannerSubTitle {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+  margin: 1.5rem 0;
+  text-shadow: -1px 0 #0097e6, 0 1px #0097e6, 1px 0 #0097e6, 0 -1px #0097e6;
+}
+
+.topBannerBtn {
+  font-family: "Oswald", sans-serif;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: none;
+}
+
+.topBannerBtn:hover {
+  background-color: #dad7cd;
+  color: #2f3e46;
+}
+
+@media (max-width: 1024px) {
+  .topBannerTitle {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .topBannerSubTitle {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .topBannerBtn{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBannerTitle {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  .topBannerSubTitle {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .topBannerBtn{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 481px) {
+  .topBannerTitle {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .topBannerSubTitle {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .topBannerBtn{
+    font-size: 12px;
+  }
+}
+
+
