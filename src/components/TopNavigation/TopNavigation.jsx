@@ -152,6 +152,45 @@ class TopNavigation extends Component {
                 </div>
               </Nav.Link>
 
+              {/* Our Concern */}
+
+              <Nav.Link>
+                <div className="dropdown">
+                  <a
+                    className={this.state.navbarItem}
+                    to=""
+                    activeClassName="active to-empty"
+                    onClick={() =>
+                      this.setState((prevState) => ({
+                        portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
+                      }))
+                    }
+                  >
+                    Our Concern
+                    <AiOutlineCaretDown />
+                  </a>
+                  <div className="dropdown-content">
+                    <NavLink to="/concern/plastic">Talukder Plastic</NavLink>
+
+                    <NavLink to="/concern/foundry">Talukder Foundry</NavLink>
+
+                    <NavLink to="/concern/upvc">Talukder uPVC</NavLink>
+
+                    <NavLink to="/concern/distribution">
+                      Talukder Distribution
+                    </NavLink>
+
+                    <NavLink to="/concern/furniture">
+                      Talukder Furniture
+                    </NavLink>
+
+                    <NavLink to="/concern/j&jenterprise">
+                      J & J Enterprise
+                    </NavLink>
+                  </div>
+                </div>
+              </Nav.Link>
+
               {/* career */}
 
               <Nav.Link>

@@ -16,8 +16,8 @@ import { useState } from "react";
 import { FaFax, FaInstagramSquare } from "react-icons/fa";
 import GoogleMap from "../GoogleMap/GoogleMap";
 import axios from "axios";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   let [name, setName] = useState("");
@@ -53,29 +53,25 @@ const Footer = () => {
     } else {
       setEmailErr("");
     }
-  
   };
 
   useEffect(() => {
     AOS.init({
       offset: 120, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
+      easing: "ease", // default easing for AOS animations
       duration: 2000, // values from 0 to 3000, with step 50ms
-     
     });
   }, []);
-  
 
   return (
     <>
       <Container className="footerSection">
-
         {/* First footer section */}
         {/* data-aos='fade-right' */}
         <Row style={{ marginBottom: "2rem", textAlign: "center" }}>
-        {/* data-aos='fade-up' */}
-          <h2  className="knowusTitle">Contact us</h2>
+          {/* data-aos='fade-up' */}
+          <h2 className="knowusTitle">Contact us</h2>
 
           <Col sm={12} md={6} lg={4}>
             <MdPhoneIphone className="contactIcon" />
@@ -106,7 +102,6 @@ const Footer = () => {
               Saturday - Thrusday (9:00AM-6:00PM)
             </p>
           </Col>
-
         </Row>
 
         <hr />
@@ -114,7 +109,6 @@ const Footer = () => {
         {/* Second footer section */}
 
         <Row style={{ margin: "3rem" }}>
-
           <Col sm={12} md={6} lg={6}>
             <h1 style={{ textAlign: "center" }} className="footerTitle">
               Our Location
@@ -122,9 +116,11 @@ const Footer = () => {
             <GoogleMap />
           </Col>
 
-
           <Col sm={12} md={6} lg={6}>
-            <h1 style={{ textAlign: "center", marginTop: "1rem" }} className="footerTitle">
+            <h1
+              style={{ textAlign: "center", marginTop: "1rem" }}
+              className="footerTitle"
+            >
               Quick connect
             </h1>
             {/* data-aos='fade-left' */}
@@ -199,7 +195,6 @@ const Footer = () => {
               </div>
             </Form>
           </Col>
-
         </Row>
 
         <hr />
@@ -247,7 +242,7 @@ const Footer = () => {
             >
               Facebook
             </a>
-            
+
             <br />
 
             <BsTwitter className="socialFontTwitter" />

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Achievement.css";
 import Card from "react-bootstrap/Card";
-// import achievementImg from "../../asset/images/achievements/achievement1.jpg";
 import achievement1Img from "../../asset/images/achievements/01.jpg";
 import achievement2Img from "../../asset/images/achievements/02.jpg";
 import achievement3Img from "../../asset/images/achievements/03.jpg";
@@ -12,7 +11,6 @@ import awards2Img from "../../asset/images/achievements/awards2.png";
 import awards3Img from "../../asset/images/achievements/awards3.png";
 import awards4Img from "../../asset/images/achievements/awards4.png";
 import awards5Img from "../../asset/images/achievements/awards5.png";
-
 import awards6Img from "../../asset/images/achievements/awards6.png";
 import awards7Img from "../../asset/images/achievements/awards7.png";
 import awards8Img from "../../asset/images/achievements/awards8.png";
@@ -24,13 +22,11 @@ import awards13Img from "../../asset/images/achievements/awards13.png";
 import awards14Img from "../../asset/images/achievements/awards14.png";
 import awards15Img from "../../asset/images/achievements/awards15.png";
 import awards16Img from "../../asset/images/achievements/awards16.png";
-import awards17Img from "../../asset/images/achievements/awards17.png";
+//import awards17Img from "../../asset/images/achievements/awards17.png";
 import awards18Img from "../../asset/images/achievements/awards18.png";
 import awards19Img from "../../asset/images/achievements/awards19.png";
 import awards20Img from "../../asset/images/achievements/awards20.png";
-
 import { Col, Container, Row } from "react-bootstrap";
-import { Scale } from "@mui/icons-material";
 
 const Achievement = () => {
   return (
@@ -42,49 +38,42 @@ const Achievement = () => {
             <h2 className="awardTitle">National Awards</h2>
             <ul className="awardList">
               <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
+                Talukder Group of Industries has won numerous awards for its
+                contributions to Bangladesh's industrial sector.
               </li>
+              <li>
+                Talukder Group of Industries has been recognized for its
+                contributions to social development.
+              </li>
+              <li>
+                Talukder Group of Industries has been recognized for its
+                commitment to quality and innovation.
+              </li>
+              <li>
+                Talukder Group has also been recognized for its contributions to
+                the development of rural communities.
+              </li>
+              <li>
+                The group's plastics division has won awards for its commitment
+                to environmental sustainability, including the recycling of
+                plastic waste and the use of eco-friendly materials.
+              </li>
+              <li>
+                Talukder Group has also been recognized for its contributions to
+                the development of rural communities.
+              </li>
+
               <li>
                 Now Talukder Group is a successful brand name as well as a
                 flagship corporate name in corporate world with great
                 achievement.
               </li>
               <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
-              </li>
-              <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
-              </li>
-              <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
-              </li>
-              <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
-              </li>
-              <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
-              </li>
-              <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
-              </li>
-              <li>
-                Now Talukder Group is a successful brand name as well as a
-                flagship corporate name in corporate world with great
-                achievement.
+                Overall, Talukder Group of Industries' awards and achievements
+                reflect its commitment to excellence, innovation,
+                sustainability, and social responsibility across a range of
+                sectors, making it one of Bangladesh's most respected and
+                successful business groups.
               </li>
             </ul>
           </div>

@@ -19,7 +19,12 @@ import TeamMemberMessagePage from "../pages/TeamMemberMessagePage";
 import CorporateClientPage from "../pages/CorporateClientPage";
 import LocalClientPage from "../pages/LocalClientPage";
 import NewsDetailsPage from "../pages/NewsDetailsPgae";
-
+import PlasticPage from "../pages/PlasticPage";
+import FoundryPage from "../pages/FoundryPage";
+import UpvcPage from "../pages/UpvcPage";
+import DistriibutionPage from "../pages/DistriibutionPage";
+import FurniturePage from "../pages/FurniturePage";
+import JEnterprisePage from "../pages/JEnterprisePage";
 
 function AnimatedRoute() {
   const location = useLocation();
@@ -36,15 +41,33 @@ function AnimatedRoute() {
           <Route path="/career" element={<CareerPage />} />
           <Route path="/portfolio/gallery" element={<Gallery />} />
           <Route path="/portfolio/achievement" element={<AchievementPage />} />
-          <Route path="/product&services/advertisement" element={<AdvertisementPage />} />
-          <Route path="/client/corporateClient" element={<CorporateClientPage />} />
+          <Route
+            path="/product&services/advertisement"
+            element={<AdvertisementPage />}
+          />
+          <Route
+            path="/client/corporateClient"
+            element={<CorporateClientPage />}
+          />
           <Route path="/client/localClient" element={<LocalClientPage />} />
           <Route path="/about/director" element={<DirectorTeamPage />} />
-          <Route path="/about/managementTeam" element={<ManagementTeamPage />} />
+          <Route
+            path="/about/managementTeam"
+            element={<ManagementTeamPage />}
+          />
           <Route path="/about/chairman-message" element={<ChairmanMsgPage />} />
           <Route path="/about/md-message" element={<MdMsgPage />} />
-          <Route path="/about/Message/Details" element={<TeamMemberMessagePage />} />
-          <Route path="/news/newsDetails" element={<NewsDetailsPage />} />      
+          <Route
+            path="/about/Message/Details"
+            element={<TeamMemberMessagePage />}
+          />
+          <Route path="/news/newsDetails" element={<NewsDetailsPage />} />
+          <Route path="/concern/plastic" element={<PlasticPage />} />
+          <Route path="/concern/foundry" element={<FoundryPage />} />
+          <Route path="/concern/upvc" element={<UpvcPage />} />
+          <Route path="/concern/distribution" element={<DistriibutionPage />} />
+          <Route path="/concern/furniture" element={<FurniturePage />} />
+          <Route path="/concern/j&jenterprise" element={<JEnterprisePage />} />
         </Routes>
       </AnimatePresence>
     </>

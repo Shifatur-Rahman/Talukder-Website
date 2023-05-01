@@ -1,13 +1,13 @@
-.ManagementCard{
+.ManagementCard {
   height: 250px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.ManagementCard img{
+.ManagementCard img {
   margin: 5% 0 5% 0;
-  height: 250px;
-  width: 230px;
+  height: 90%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -15,59 +15,59 @@
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 15px;
-  }
-  
-  ul {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  .awards-section {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .award {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .award h2 {
-    margin-top: 0;
-  }
-  
-  .award ul {
-    margin-top: 10px;
-  }
-  
-  .award li {
-    margin-bottom: 5px;
-  }
-  
-  .award img {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
-.awardTitle{
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.awards-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.award {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.award h2 {
+  margin-top: 0;
+}
+
+.award ul {
+  margin-top: 10px;
+}
+
+.award li {
+  margin-bottom: 5px;
+}
+
+.award img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.awardTitle {
   font-size: 30px;
 }
 
@@ -85,16 +85,16 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .awardTitle{
+  .awardTitle {
     font-size: 20px;
   }
-  .awardList{
+  .awardList {
     font-size: 13px;
   }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 768px) {
-  .ManagementCard{
+  .ManagementCard {
     height: 300px;
   }
 }
