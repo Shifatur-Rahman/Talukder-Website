@@ -39,21 +39,20 @@
 
 .navItem {
   text-decoration: none !important;
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   margin-right: 1rem;
-  text-transform: uppercase;
-  color: #273c75;
+  /* color: #273c75; */
+  color: #fff;
 }
 
 .navItemScroll {
   text-decoration: none !important;
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px !important;
-  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px !important;
+  font-weight: 400;
   margin-right: 1rem;
-  text-transform: uppercase;
   color: #2f3e46;
 }
 

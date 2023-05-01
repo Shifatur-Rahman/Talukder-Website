@@ -140,7 +140,7 @@ class TopNavigation extends Component {
                       }))
                     }
                   >
-                    Our clients
+                    Our Clients
                     <AiOutlineCaretDown />
                   </a>
                   <div className="dropdown-content">
@@ -156,7 +156,7 @@ class TopNavigation extends Component {
 
               <Nav.Link>
                 <NavLink className={this.state.navbarItem} to="/career">
-                  career
+                  Career
                 </NavLink>
               </Nav.Link>
 
