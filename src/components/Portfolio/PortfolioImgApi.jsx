@@ -45,8 +45,8 @@ import tbl44 from "../../asset/images/office furniture/tbl44.jpg"
 import tbl45 from "../../asset/images/office furniture/tbl45.jpg"
 import tbl46 from "../../asset/images/office furniture/tbl46.png"
 import tbl47 from "../../asset/images/office furniture/tbl47.jpg"
-// import tbl48 from "../../asset/images/office furniture/tbl48.jpg"
-import tbl49 from "../../asset/images/office furniture/tbl49.jpg"
+import tbl48 from "../../asset/images/office furniture/tbl48.jpg"
+import tbl49 from "../../asset/images/office furniture/tbl48.jpg"
 import tbl50 from "../../asset/images/office furniture/tbl50.jpg"
 import tbl51 from "../../asset/images/office furniture/tbl51.jpeg"
 import tbl52 from "../../asset/images/office furniture/tbl52.jpg"
@@ -68,6 +68,16 @@ import tbl67 from "../../asset/images/office furniture/tbl67.jpg"
 import tbl68 from "../../asset/images/office furniture/tbl68.jpg"
 import tbl69 from "../../asset/images/office furniture/tbl69.jpg"
 import tbl70 from "../../asset/images/office furniture/tbl70.jpg"
+import tbl71 from "../../asset/images/office furniture/tbl71.jpg"
+import tbl72 from "../../asset/images/office furniture/tbl72.jpg"
+import tbl73 from "../../asset/images/office furniture/tbl73.jpg"
+import tbl74 from "../../asset/images/office furniture/tbl74.jpg"
+import tbl75 from "../../asset/images/office furniture/tbl75.jpg"
+import tbl76 from "../../asset/images/office furniture/tbl76.jpg"
+import tbl77 from "../../asset/images/office furniture/tbl77.jpg"
+import tbl78 from "../../asset/images/office furniture/tbl78.jpg"
+import tbl79 from "../../asset/images/office furniture/tbl79.jpg"
+import tbl80 from "../../asset/images/office furniture/tbl80.jpg"
 
 // Plastic image
 
@@ -79,18 +89,18 @@ import plastic5 from "../../asset/images/plastic/plastic5.png"
 import plastic6 from "../../asset/images/plastic/plastic6.png"
 import plastic7 from "../../asset/images/plastic/plastic7.png"
 import plastic8 from "../../asset/images/plastic/plastic8.png"
-import plastic9 from "../../asset/images/Corporate plastic/plastic9.png"
+//import plastic9 from "../../asset/images/Corporate plastic/plastic9.png"
 import plastic10 from "../../asset/images/Corporate plastic/plastic10.png"
 import plastic11 from "../../asset/images/plastic/plastic11.png"
 import plastic12 from "../../asset/images/Corporate plastic/plastic12.png"
 import plastic13 from "../../asset/images/plastic/plastic13.png"
 import plastic14 from "../../asset/images/plastic/plastic14.png"
 import plastic15 from "../../asset/images/plastic/plastic15.png"
-import plastic16 from "../../asset/images/plastic/plastic16.jpg"
+//import plastic16 from "../../asset/images/plastic/plastic16.jpg"
 import plastic17 from "../../asset/images/plastic/plastic17.png"
 import plastic18 from "../../asset/images/plastic/plastic18.png"
 import plastic19 from "../../asset/images/plastic/plastic19.png"
-import plastic20 from "../../asset/images/plastic/plastic20.png"
+// import plastic20 from "../../asset/images/plastic/plastic20.png"
 import plastic21 from "../../asset/images/plastic/plastic21.png"
 import plastic22 from "../../asset/images/plastic/plastic22.png"
 import plastic23 from "../../asset/images/Corporate plastic/plastic23.png"
@@ -557,7 +567,7 @@ const portfolioItems = [
       category: "office furniture",
       code : "TFCTO-048",
       size: "L1200 X W500 X H750mm",
-      imgSrc: tbl47,
+      imgSrc: tbl48,
     },
     {
       id: 49,
@@ -565,7 +575,7 @@ const portfolioItems = [
       category: "office furniture",
       code : "TFCTO-049",
       size: "L900 X W480 X H750mm",
-      imgSrc: tbl49,
+      imgSrc: tbl50,
     },
     {
       id: 50,
@@ -753,102 +763,101 @@ const portfolioItems = [
 },
 
 
-    // WALL MOUNTED CABINET
-    // {
-    //   id: 71,
-    //   title: "WALL MOUNTED CABINET",
-    //   category: "office furniture",
-    //   code : "TFWMC-071",
-    //   size: "L1600 X W350 X H600mm",
-    //   imgSrc: tbl68,
-    // },
+   // WALL MOUNTED CABINET
+    {
+      id: 71,
+      title: "WALL MOUNTED CABINET",
+      category: "office furniture",
+      code : "TFWMC-071",
+      size: "L1600 X W350 X H600mm",
+      imgSrc: tbl71,
+    },
     
-    // {
-    //   id: 72,
-    //   title: "WALL MOUNTED CABINET",
-    //   category: "office furniture",
-    //   code : "TFWMC-072",
-    //   size: "L900 X W350 X H700mm",
-    //   imgSrc: tbl58,
-    // },
+    {
+      id: 72,
+      title: "WALL MOUNTED CABINET",
+      category: "office furniture",
+      code : "TFWMC-072",
+      size: "L900 X W350 X H700mm",
+      imgSrc: tbl72,
+    },
 
-// BACK CABINET
+//BACK CABINET
 
-// {
-//   id: 73,
-//   title: "BACK CABINET",
-//   category: "office furniture",
-//   code : "TFBCO-073",
-//   size: "L1600 X W450 X H750mm",
-//   imgSrc: tbl58,
-// },
+{
+  id: 73,
+  title: "BACK CABINET",
+  category: "office furniture",
+  code : "TFBCO-073",
+  size: "L1600 X W450 X H750mm",
+  imgSrc: tbl73,
+},
 
-// {
-//   id: 74,
-//   title: "BACK CABINET",
-//   category: "office furniture",
-//   code : "TFBCO-074",
-//   size: "L1650 X W450 X H750mm",
-//   imgSrc: tbl58,
-// },
-
-// {
-//   id: 75,
-//   title: "BACK CABINET",
-//   category: "office furniture",
-//   code : "TFBCO-075",
-//   size: "L1200 X W400 X H750mm",
-//   imgSrc: tbl58,
-// },
+{
+  id: 74,
+  title: "BACK CABINET",
+  category: "office furniture",
+  code : "TFBCO-074",
+  size: "L1650 X W450 X H750mm",
+  imgSrc: tbl74,
+},
+{
+  id: 75,
+  title: "BACK CABINET",
+  category: "office furniture",
+  code : "TFBCO-075",
+  size: "L1200 X W400 X H750mm",
+  imgSrc: tbl75,
+},
 
 //FULL HEIGHT FILE CABINET
 
-// {
-//   id: 76,
-//   title: "FULL HEIGHT FILE CABINET",
-//   category: "office furniture",
-//   code : "TFFHB-076",
-//   size: "L2400 X W400 X H1800mm",
-//   imgSrc: tbl58,
-// },
-// {
-//   id: 77,
-//   title: "FULL HEIGHT FILE CABINET",
-//   category: "office furniture",
-//   code : "TFFHB-077",
-//   size: "L2400 X W400 X H1800mm",
-//   imgSrc: tbl58,
-// },
+{
+  id: 76,
+  title: "FULL HEIGHT FILE CABINET",
+  category: "office furniture",
+  code : "TFFHB-076",
+  size: "L2400 X W400 X H1800mm",
+  imgSrc: tbl76,
+},
+{
+  id: 77,
+  title: "FULL HEIGHT FILE CABINET",
+  category: "office furniture",
+  code : "TFFHB-077",
+  size: "L2400 X W400 X H1800mm",
+  imgSrc: tbl77,
+},
 
-// GARDEN FURNITURE
-// {
-//   id: 78,
-//   title: "GARDEN FURNITURE",
-//   category: "office furniture",
-//   code : "TFGWS-078",
-//   size: "L1500 X W560 X H900mm",
-//   imgSrc: tbl58,
-// },
+//GARDEN FURNITURE
+{
+  id: 78,
+  title: "GARDEN FURNITURE",
+  category: "office furniture",
+  code : "TFGWS-078",
+  size: "L1500 X W560 X H900mm",
+  imgSrc: tbl78,
+},
 
-// {
-//   id: 79,
-//   title: "GARDEN FURNITURE",
-//   category: "office furniture",
-//   code : "TFGWS-079",
-//   size: "L450 X W500 X H950mm",
-//   imgSrc: tbl58,
-// },
+{
+  id: 79,
+  title: "GARDEN FURNITURE",
+  category: "office furniture",
+  code : "TFGWS-079",
+  size: "L450 X W500 X H950mm",
+  imgSrc: tbl79,
+},
 
 
-// SWIMMING POOL FURNITURE
-// {
-//   id: 80,
-//   title: "SWIMMING POOL FURNITURE",
-//   category: "office furniture",
-//   code : "TFSPF-080",
-//   size: "L1980 X W660 X H790mm",
-//   imgSrc: tbl58,
-// },
+//SWIMMING POOL FURNITURE
+{
+  id: 80,
+  title: "SWIMMING POOL FURNITURE",
+  category: "office furniture",
+  code : "TFSPF-080",
+  size: "L1980 X W660 X H790mm",
+  imgSrc: tbl80,
+},
 
 
 ////                              ------------      PLASTIC  (101- )           --------------
@@ -895,11 +904,11 @@ const portfolioItems = [
   category: "plastic",
   imgSrc: plastic8,
 },
-{
-  id: 109,
-  category: "corporate plastic",
-  imgSrc: plastic9,
-},
+// {
+//   id: 109,
+//   category: "corporate plastic",
+//   imgSrc: plastic9,
+// },
 {
   id: 110,
   category: "corporate plastic",
@@ -930,11 +939,11 @@ const portfolioItems = [
   category: "plastic",
   imgSrc: plastic15,
 },
-{
-  id: 116,
-  category: "plastic",
-  imgSrc: plastic16,
-},
+// {
+//   id: 116,
+//   category: "plastic",
+//   imgSrc: plastic16,
+// },
 {
   id: 117,
   category: "plastic",
@@ -950,11 +959,11 @@ const portfolioItems = [
   category: "plastic",
   imgSrc: plastic19,
 },
-{
-  id: 120,
-  category: "plastic",
-  imgSrc: plastic20,
-},
+// {
+//   id: 120,
+//   category: "plastic",
+//   imgSrc: plastic20,
+// },
 {
   id: 121,
   category: "plastic",
@@ -1120,11 +1129,11 @@ const portfolioItems = [
   category: "plastic",
   imgSrc: plastic53,
 },
-{
-  id: 154,
-  category: "plastic",
-  imgSrc: plastic54,
-},
+// {
+//   id: 154,
+//   category: "plastic",
+//   imgSrc: plastic54,
+// },
 {
   id: 155,
   category: "corporate plastic",
@@ -1140,11 +1149,11 @@ const portfolioItems = [
   category: "plastic",
   imgSrc: plastic57,
 },
-{
-  id: 158,
-  category: "plastic",
-  imgSrc: plastic58,
-},
+// {
+//   id: 158,
+//   category: "plastic",
+//   imgSrc: plastic58,
+// },
 {
   id: 159,
   category: "corporate plastic",
@@ -1160,11 +1169,11 @@ const portfolioItems = [
   category: "plastic",
   imgSrc: plastic61,
 },
-{
-  id: 162,
-  category: "plastic",
-  imgSrc: plastic62,
-},
+// {
+//   id: 162,
+//   category: "plastic",
+//   imgSrc: plastic62,
+// },
 
       //                               --------   lged(200- )  --------
   

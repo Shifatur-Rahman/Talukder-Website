@@ -1,10 +1,11 @@
-import React from 'react'
-import Footer from '../components/Footer/Footer'
-import ImgGallery from '../components/ImgGallery/ImgGallery'
-import PageTop from '../components/PageTop/PageTop'
-import TopNavigation from '../components/TopNavigation/TopNavigation'
+import React from "react";
+import Footer from "../components/Footer/Footer";
+import ImgGallery from "../components/ImgGallery/ImgGallery";
+import PageTop from "../components/PageTop/PageTop";
+import TopNavigation from "../components/TopNavigation/TopNavigation";
 import { animateScroll } from "react-scroll";
 import { useEffect } from "react";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 const Gallery = () => {
   useEffect(() => {
@@ -15,12 +16,13 @@ const Gallery = () => {
   }, []);
   return (
     <>
-        <TopNavigation title="Talukder Group"/>
-        <PageTop pageTitle="Gallery" />
-        <ImgGallery />
-        <Footer />
+      <TopNavigation title="Talukder Group" />
+      <PageTop pageTitle="Recent & Upcoming Product" />
+      <ImgGallery />
+      <Footer />
+      <BackToTopButton />
     </>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

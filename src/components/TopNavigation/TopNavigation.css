@@ -40,8 +40,8 @@
 .navItem {
   text-decoration: none !important;
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   margin-right: 1rem;
   /* color: #273c75; */
   color: #fff;
@@ -51,7 +51,7 @@
   text-decoration: none !important;
   font-family: "Raleway", sans-serif;
   font-size: 15px !important;
-  font-weight: 400;
+  font-weight: 500;
   margin-right: 1rem;
   color: #2f3e46;
 }
@@ -62,7 +62,7 @@
 }
 
 .navItem:hover {
-  color: #3958ac !important;
+  color: #cccccc !important;
   transition: all ease 1s;
 }
 
@@ -92,6 +92,19 @@
   width: 100% !important;
 }
 
+.navDropdown {
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
+.navDropdown:hover {
+  background-color: #f8f9fa;
+}
+
+.navDropdown:hover {
+  background-color: transparent;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -113,6 +126,10 @@
   text-decoration: underline;
   border-bottom: 2px solid #02cde3;
   padding-bottom: 5px;
+}
+
+.dropdown-content {
+  font-size: 12px;
 }
 
 @media (max-width: 1300px) {
@@ -148,15 +165,15 @@
 
 @media (max-width: 1000px) {
   .navigation {
-    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem 2rem;
-    background-color: #bfbfbf;
+    /* background-color: #bfbfbf; */
   }
 
   .navItem {
     /* color: #fff !important; */
     /* text-align: center; */
-    color: #000 !important;
+    color: #fff !important;
   }
 
   .navItemScroll {
@@ -166,18 +183,6 @@
   #one {
     display: inline-block;
   }
-}
-
-@media (max-width: 900px) {
-  /* .cardImg1 {
-    width: 65px;
-    height: 35px;
-  }
-
-  .cardImg2 {
-    width: 135px;
-    height: 35px;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -192,6 +197,7 @@
   }
   .dropdown-content {
     display: none;
+    font-size: 10px;
   }
   .dropdown-content.show {
     display: block;

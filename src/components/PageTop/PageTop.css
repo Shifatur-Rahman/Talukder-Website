@@ -1,5 +1,5 @@
 .topFixedPage {
-  background-image: url(../../asset/images/backgroundImage.png);
+  background-image: url(../../asset/images/Banner/banner.jpg);
   height: 250px;
   background-attachment: fixed;
   background-position: center;
@@ -9,18 +9,22 @@
   -webkit-box-shadow: -2px -3px 41px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -2px -3px 41px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -2px -3px 41px -1px rgba(0, 0, 0, 0.75);
-   border-bottom-left-radius: 5% 2%;
+  border-bottom-left-radius: 5% 2%;
   border-bottom-right-radius: 5% 2%;
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
 }
 
-/* .topPageOverlay {
+.topPageOverlay {
   position: absolute;
   width: 100%;
   height: 250px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 5% 2%;
   border-bottom-right-radius: 5% 2%;
-}  */
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+} 
 
  /* border-bottom-left-radius: 50% 15%;
   border-bottom-right-radius: 50% 12%; */
@@ -30,7 +34,7 @@
 .pageContent {
   width: 700px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
