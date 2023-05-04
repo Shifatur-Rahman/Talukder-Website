@@ -58,7 +58,8 @@ class TopNavigation extends Component {
         >
           <Link to="/">
             <Navbar.Brand className={this.state.navTitle} href="#home">
-              <Card.Img className="logo" variant="top" src={talukderLogo} />
+              <img className="logo" src={talukderLogo}  />
+              {/* <Card.Img className="logo" variant="top" src={talukderLogo} /> */}
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
