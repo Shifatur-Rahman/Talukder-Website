@@ -291,7 +291,7 @@ const ManagementTeam = () => {
                 </div>
 
                 <div className="img2">
-                  <img src={profile2Img} alt="two img" />
+                  <img src={profile3Img} alt="two img" />
                 </div>
 
                 <div className="main-text">
@@ -324,7 +324,7 @@ const ManagementTeam = () => {
                 </div>
 
                 <div className="img2">
-                  <img src={profile2Img} alt="two img" />
+                  <img src={profile3Img} alt="two img" />
                 </div>
 
                 <div className="main-text">
