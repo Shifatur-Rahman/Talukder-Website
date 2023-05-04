@@ -7,8 +7,13 @@ import slider1 from "../../asset/images/Slider_Img/slider1.jpg";
 import slider2 from "../../asset/images/Slider_Img/slider2.jpg";
 import slider3 from "../../asset/images/Slider_Img/slider3.jpg";
 import Button from "react-bootstrap/Button";
+import { useRef } from "react";
+import { Link } from "react-scroll";
+import { scroller } from "react-scroll";
 
 const Slider = () => {
+  const ref = useRef(null);
+
   const images = [
     {
       src: slider1,
@@ -41,6 +46,19 @@ const Slider = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  let handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // const scrollToFooter = () => {
+  //   scroller.scrollTo("summary", {
+  //     duration: 800,
+  //     delay: 0,
+  //     smooth: "easeInOutQuart",
+  //   });
+  // };
+
   return (
     <Carousel activeIndex={activeIndex} onSelect={handleSelect} interval={1000}>
       {images.map((image, index) => (
@@ -65,6 +83,7 @@ const Slider = () => {
                 >
                   Our Services
                 </Button>
+
                 <Button className="learnBtn" variant="outline-light">
                   Learn More
                 </Button>
