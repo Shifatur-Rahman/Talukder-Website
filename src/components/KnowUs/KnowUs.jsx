@@ -43,12 +43,6 @@ function KnowUs(props, ref) {
                 <Button className="knowMoreBtn" variant="outline-info">
                   Know More
                 </Button>{" "}
-                {/* <Button
-                  className="learnBtn btn-block btn-lg mt-3"
-                  variant="outline-primary"
-                >
-                  Know More
-                </Button> */}
               </NavLink>
             </div>
           </Col>

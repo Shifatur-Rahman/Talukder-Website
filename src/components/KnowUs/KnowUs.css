@@ -22,7 +22,7 @@ html {
 
 .knowMoreBtn {
   font-size: 18px;
-  margin-top: 1rem;
+  margin-top: 15px;
   font-weight: 700;
   border: 1px solid #17a2b8;
 }
@@ -31,6 +31,7 @@ html {
   background-color: #17a2b8;
   color: #fff !important;
   border-radius: 5px;
+  transition: all ease 1.5s;
 }
 
 @media only screen and (min-width: 1000px) {
