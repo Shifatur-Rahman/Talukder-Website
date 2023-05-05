@@ -86,7 +86,7 @@ const Slider = () => {
                 <div class="button-container">
                   <Button
                     onClick={handleClick}
-                    className="serviceBtn"
+                    className="serviceBtn btn-block btn-lg mt-3"
                     style={{ marginRight: "20px" }}
                     variant="info"
                   >
@@ -95,7 +95,7 @@ const Slider = () => {
 
                   <Button
                     onClick={handleKnowClick}
-                    className="learnBtn"
+                    className="learnBtn btn-block btn-lg mt-3"
                     variant="outline-light"
                   >
                     Learn More

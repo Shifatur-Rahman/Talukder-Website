@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./TopNavigation.css";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import talukderLogo from "../../asset/images/talukderLogo.png";
+// import talukderLogo from "../../asset/images/talukderLogo.png";
+import talukderLogo from "../../asset/images/Logo/talukderLogo.png";
 import Card from "react-bootstrap/Card";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
@@ -41,10 +42,6 @@ class TopNavigation extends Component {
     window.addEventListener("scroll", this.onScroll);
   };
 
-  // refresh = () => {
-  //   window.location.reload(true);
-  // }
-
   render() {
     return (
       <>
@@ -59,7 +56,6 @@ class TopNavigation extends Component {
           <Link to="/">
             <Navbar.Brand className={this.state.navTitle} href="#home">
               <img className="logo" src={talukderLogo} />
-              {/* <Card.Img className="logo" variant="top" src={talukderLogo} /> */}
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

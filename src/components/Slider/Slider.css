@@ -1,22 +1,3 @@
-/* .carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-} */
-
-/* .carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  width: 100%;
-} */
-
 .carousel-caption {
   display: flex;
   flex-direction: column;
@@ -102,18 +83,50 @@
     width: 100%;
   }
 } */
-
-@media screen and (max-width: 768px) {
-  .button-container button {
-    font-size: 14px;
-  }
-}
-
 .button-container button {
   transition: all 0.3s ease;
 }
 
 .button-container button:hover {
-  background-color: #17a2b8;
-  color: white;
+  background-color: #c4e3ed;
+  color: #000;
+  transition: all ease 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .button-container button {
+    font-size: 14px;
+  }
+  .serviceBtn,
+  .learnBtn {
+    width: 130px;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button-container button {
+    font-size: 12px;
+  }
+  .serviceBtn,
+  .learnBtn {
+    width: 130px;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .button-container button {
+    font-size: 10px;
+  }
+  .serviceBtn,
+  .learnBtn {
+    width: 130px;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    width: 90px;
+    padding: 6px !important;
+  }
 }
