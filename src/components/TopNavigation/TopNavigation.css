@@ -136,12 +136,23 @@
 
 @media (max-width: 1000px) {
   .navigation {
-    /* background-color: rgba(0, 0, 0, 0); */
-    /* padding: 1rem 2rem; */
     height: 80px !important;
   }
   button.navbar-toggler {
-    background-color: green;
+    background-color: #17a2b8;
+    border: none;
+    color: #17a2b8;
+  }
+
+  span.navbar-toggler-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  #responsive-navbar-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    text-align: center;
   }
 
   .navItem {
@@ -183,11 +194,16 @@
   }
 }
 
+@media (max-width: 600px) {
+  .navigation {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
 @media (max-width: 450px) {
   .navigation {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem 2rem;
-    height: 50px;
+    /* padding: 1rem 2rem; */
+    height: 35px;
   }
   .logo {
     width: 70px;

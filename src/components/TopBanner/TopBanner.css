@@ -76,6 +76,16 @@
   color: #2f3e46;
 }
 
+@media (min-width: 1400px) {
+  .topBannerTitle {
+    font-size: 50px;
+  }
+
+  .topBannerSubTitle {
+    font-size: 38px;
+  }
+}
+
 @media (max-width: 1024px) {
   .navigation {
     height: 70px;
