@@ -41,9 +41,7 @@ function Summary(props, ref) {
                         )}
                       </VisibilitySensor>
                     </h2>
-                    <h2 className="summaryTitle">
-                      Inception as a Commodity Trader
-                    </h2>
+                    <h2 className="summaryTitle">Since</h2>
                     <hr className="summaryAlign" />
                   </Col>
 
@@ -77,8 +75,7 @@ function Summary(props, ref) {
                       >
                         {({ isVisible }) => (
                           <div className="chartsCountUp" style={{ height: 40 }}>
-                            {isVisible ? <CountUp end={10} /> : null}{" "}
-                            <span style={{ fontSize: "32px" }}>+</span>
+                            {isVisible ? <CountUp end={10} /> : null} +
                           </div>
                         )}
                       </VisibilitySensor>
