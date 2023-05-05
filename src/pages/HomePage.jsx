@@ -21,8 +21,8 @@ const HomePage = () => {
     <>
       <TopNavigation title="Talukder Group" />
       <Slider />
-      <KnowUs />
-      <Summary />
+      {/* <KnowUs />
+      <Summary /> */}
       <NewsAndEvents />
       <Footer />
       <BackToTopButton />

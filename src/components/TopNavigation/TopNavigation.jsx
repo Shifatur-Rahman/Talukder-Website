@@ -58,7 +58,7 @@ class TopNavigation extends Component {
         >
           <Link to="/">
             <Navbar.Brand className={this.state.navTitle} href="#home">
-              <img className="logo" src={talukderLogo}  />
+              <img className="logo" src={talukderLogo} />
               {/* <Card.Img className="logo" variant="top" src={talukderLogo} /> */}
             </Navbar.Brand>
           </Link>
@@ -97,8 +97,15 @@ class TopNavigation extends Component {
                     <AiOutlineCaretDown />
                   </a>
                   <div className="dropdown-content">
-                    <NavLink className="navDropdown" to="/portfolio/gallery">Gallery</NavLink>
-                    <NavLink className="navDropdown" to="/portfolio/achievement">Achivement</NavLink>
+                    <NavLink className="navDropdown" to="/portfolio/gallery">
+                      Gallery
+                    </NavLink>
+                    <NavLink
+                      className="navDropdown"
+                      to="/portfolio/achievement"
+                    >
+                      Achivement
+                    </NavLink>
                   </div>
                 </div>
               </Nav.Link>
@@ -116,10 +123,15 @@ class TopNavigation extends Component {
                     <AiOutlineCaretDown />
                   </a>
                   <div className="dropdown-content">
-                    <NavLink className="navDropdown" to="/product&services/advertisement">
+                    <NavLink
+                      className="navDropdown"
+                      to="/product&services/advertisement"
+                    >
                       Advertisement
                     </NavLink>
-                    <NavLink className="navDropdown" to="/portfolio">Product Gallery</NavLink>
+                    <NavLink className="navDropdown" to="/portfolio">
+                      Product Gallery
+                    </NavLink>
                   </div>
                 </div>
               </Nav.Link>
@@ -142,7 +154,10 @@ class TopNavigation extends Component {
                     <AiOutlineCaretDown />
                   </a>
                   <div className="dropdown-content">
-                    <NavLink className="navDropdown" to="/client/corporateClient">
+                    <NavLink
+                      className="navDropdown"
+                      to="/client/corporateClient"
+                    >
                       Corporate Client
                     </NavLink>
                     {/* <NavLink to="/client/localClient">Local client</NavLink> */}
@@ -170,9 +185,13 @@ class TopNavigation extends Component {
                   <div className="dropdown-content">
                     <NavLink to="/concern/plastic">Talukder Plastic</NavLink>
 
-                    <NavLink className="navDropdown" to="/concern/foundry">Talukder Foundry</NavLink>
+                    <NavLink className="navDropdown" to="/concern/foundry">
+                      Talukder Foundry
+                    </NavLink>
 
-                    <NavLink className="navDropdown" to="/concern/upvc">Talukder uPVC</NavLink>
+                    <NavLink className="navDropdown" to="/concern/upvc">
+                      Talukder uPVC
+                    </NavLink>
 
                     <NavLink className="navDropdown" to="/concern/distribution">
                       Talukder Distribution
@@ -182,7 +201,10 @@ class TopNavigation extends Component {
                       Talukder Furniture
                     </NavLink>
 
-                    <NavLink className="navDropdown" to="/concern/j&jenterprise">
+                    <NavLink
+                      className="navDropdown"
+                      to="/concern/j&jenterprise"
+                    >
                       J & J Enterprise
                     </NavLink>
                   </div>
@@ -215,16 +237,25 @@ class TopNavigation extends Component {
                     <AiOutlineCaretDown />
                   </a>
                   <div className="dropdown-content">
-                    <NavLink className="navDropdown" to="/about/director"> Board of Director</NavLink>
+                    <NavLink className="navDropdown" to="/about/director">
+                      {" "}
+                      Board of Director
+                    </NavLink>
                     <NavLink className="navDropdown" to="/about/managementTeam">
                       {" "}
                       Management Team
                     </NavLink>
-                    <NavLink className="navDropdown" to="/about/chairman-message">
+                    <NavLink
+                      className="navDropdown"
+                      to="/about/chairman-message"
+                    >
                       {" "}
                       Message from Chairman
                     </NavLink>
-                    <NavLink className="navDropdown" to="/about/md-message"> Message from Md</NavLink>
+                    <NavLink className="navDropdown" to="/about/md-message">
+                      {" "}
+                      Message from Md
+                    </NavLink>
                   </div>
                 </div>
               </Nav.Link>

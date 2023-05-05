@@ -7,8 +7,9 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Card from "react-bootstrap/Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { forwardRef } from "react";
 
-const Summary = () => {
+function Summary(props, ref) {
   useEffect(() => {
     AOS.init({
       offset: 100, // offset (in px) from the original trigger point
@@ -21,7 +22,7 @@ const Summary = () => {
   return (
     <>
       <Container fluid={true} className="SummarySection summaryMargin p-0">
-        <div className="summaryOverlay">
+        <div ref={ref} className="summaryOverlay">
           <Container className="text-center">
             {/* data-aos='fade-down' */}
             <Row>
@@ -98,16 +99,7 @@ const Summary = () => {
                         <BsFillArrowRightCircleFill className="summaryIcon" />{" "}
                         Plastic
                       </p>
-                      {/* <p className="summaryCardText">
-                          {" "}
-                          <BsFillArrowRightCircleFill className="summaryIcon" />{" "}
-                          CORPORATE PLASTIC
-                        </p>
-                        <p className="summaryCardText">
-                          {" "}
-                          <BsFillArrowRightCircleFill className="summaryIcon" />{" "}
-                            HOUSEHOLD PLASTIC
-                        </p> */}
+
                       <p className="summaryCardText">
                         {" "}
                         <BsFillArrowRightCircleFill className="summaryIcon" />{" "}
@@ -140,6 +132,6 @@ const Summary = () => {
       </Container>
     </>
   );
-};
+}
 
-export default Summary;
+export default forwardRef(Summary);
