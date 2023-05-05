@@ -59,10 +59,7 @@ function Summary(props, ref) {
                       </VisibilitySensor>
                     </h2>
 
-                    <h2 className="summaryTitle">
-                      Total <br />
-                      Employees
-                    </h2>
+                    <h2 className="summaryTitle">Employees</h2>
 
                     <hr className="summaryAlign" />
                   </Col>

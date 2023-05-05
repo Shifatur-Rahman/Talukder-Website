@@ -4,10 +4,12 @@ html {
 
 .knowusTitle {
   font-size: 35px;
-  color: #00a8ff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #212a3e;
+  /* text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px red; */
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 
 .knowusText {
@@ -21,10 +23,14 @@ html {
 .knowMoreBtn {
   font-size: 18px;
   margin-top: 1rem;
+  font-weight: 700;
+  border: 1px solid #17a2b8;
 }
 
 .knowMoreBtn:hover {
+  background-color: #17a2b8;
   color: #fff !important;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 1000px) {

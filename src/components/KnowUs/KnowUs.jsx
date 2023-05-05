@@ -38,11 +38,17 @@ function KnowUs(props, ref) {
               Country.
             </p>
             <div className="text-center">
-              <NavLink className="knowMoreBtn" to="/about">
+              <NavLink className="knowMore" to="/about">
                 {/* data-aos='flip-up'  */}
                 <Button className="knowMoreBtn" variant="outline-info">
                   Know More
                 </Button>{" "}
+                {/* <Button
+                  className="learnBtn btn-block btn-lg mt-3"
+                  variant="outline-primary"
+                >
+                  Know More
+                </Button> */}
               </NavLink>
             </div>
           </Col>

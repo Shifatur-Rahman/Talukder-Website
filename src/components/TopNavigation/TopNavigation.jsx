@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 // import talukderLogo from "../../asset/images/talukderLogo.png";
 import talukderLogo from "../../asset/images/Logo/talukderLogo.png";
-import Card from "react-bootstrap/Card";
+//import Card from "react-bootstrap/Card";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
 class TopNavigation extends Component {
