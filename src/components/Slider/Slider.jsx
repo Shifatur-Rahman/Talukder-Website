@@ -52,13 +52,13 @@ const Slider = () => {
 
   let handleClick = () => {
     if (Summaryref.current) {
-      Summaryref.current.scrollIntoView({ behavior: "smooth" });
+      Summaryref.current.scrollIntoView({ behavior: "smooth"});
     }
   };
 
   let handleKnowClick = () => {
     if (LearnMoreref.current) {
-      LearnMoreref.current.scrollIntoView({ behavior: "smooth" });
+        LearnMoreref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -76,7 +76,7 @@ const Slider = () => {
               timeout={1000}
               classNames="fade"
             >
-              <img className="d-block w-100" src={image.src} alt={image.alt} />
+              <img className="sliderImg d-block w-100" src={image.src} alt={image.alt} />
             </CSSTransition>
 
             <div className="carousel-overlay">
