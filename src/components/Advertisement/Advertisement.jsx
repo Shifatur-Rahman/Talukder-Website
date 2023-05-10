@@ -22,7 +22,7 @@ import jugImg from "../../asset/images/advertisement/jug.png";
 import household1 from "../../asset/images/advertisement/household1.jpg";
 import household2 from "../../asset/images/advertisement/household2.jpg";
 import square_rack from "../../asset/images/advertisement/Squre Rack.png";
-import chairImg from "../../asset/images/advertisement/President Chair.jpg";
+import chairImg from "../../asset/images/advertisement/President Chair.png";
 import pipe1Img from "../../asset/images/advertisement/pipe1.jpg";
 import threadPipeImg from "../../asset/images/advertisement/threadPipe.jpg";
 import bucketImg from "../../asset/images/advertisement/bucketposter.png";
