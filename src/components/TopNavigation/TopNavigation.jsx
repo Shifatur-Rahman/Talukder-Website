@@ -55,13 +55,24 @@ class TopNavigation extends Component {
         >
           <Link to="/">
             <Navbar.Brand className={this.state.navTitle} href="#home">
-              <img className="logo" src={talukderLogo} />
+              <img data-aos="fade-down"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="1000" className="logo" src={talukderLogo} />
             </Navbar.Brand>
           </Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          
+          <Navbar.Toggle   data-aos="fade-down"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1000"
+          aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
-            <Nav>
+            <Nav data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="1500">
               {/* Home */}
 
               <Nav.Link>
@@ -163,6 +174,12 @@ class TopNavigation extends Component {
               {/* Our Concern */}
 
               <Nav.Link>
+                <NavLink className={this.state.navbarItem} to="/concern">
+                Our Concern
+                </NavLink>
+              </Nav.Link>
+
+              {/* <Nav.Link>
                 <div className="dropdown">
                   <a
                     className={this.state.navbarItem}
@@ -204,7 +221,7 @@ class TopNavigation extends Component {
                     </NavLink>
                   </div>
                 </div>
-              </Nav.Link>
+              </Nav.Link> */}
 
               {/* career */}
 

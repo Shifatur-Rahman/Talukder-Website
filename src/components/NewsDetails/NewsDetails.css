@@ -10,14 +10,13 @@
 .newsCard {
   margin-right: 20px;
   border: 1px solid #92cce9;
-  height: 450px;
+  height: 500px;
   margin-left: 10px;
 }
 
 .newsCardImg{
   height: 200px;
 }
-
 
 .lastCard {
   margin-right: 0;
@@ -34,6 +33,28 @@
   text-align: justify;
 }
 
+@media (max-width: 1200px) {
+  .newsCard {
+     height: 550px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .newsCard {
+    height: 560px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .newsCard {
+    height: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .newsCard img{
+    height: 300px !important;
+  }
+  }
 @media (max-width: 600px) {
   .newsCard{
     width: 350px;
@@ -53,21 +74,14 @@
 }
 
 
-@media (max-width: 1250px) {
-  .newsCard {
-     height: 500px;
+@media (max-width: 400px) {
+  .newsCard{
+    width: 250px;
   }
 }
 
-
-@media (max-width: 1100px) {
-  .newsCard {
-     height: 450px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .newsCard {
-     height: 500px;
+@media (max-width: 300px) {
+  .newsCard{
+    width: 220px;
   }
 }
