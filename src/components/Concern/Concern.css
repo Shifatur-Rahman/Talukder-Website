@@ -1,0 +1,23 @@
+.concern {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.concern ul li {
+  list-style-type: none;
+}
+
+.concern ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e4f4f !important;
+}
+
+.concernIcon {
+  color: #17a2b8;
+  font-weight: 800;
+}
