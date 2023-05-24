@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { Col, Container, Card } from "react-bootstrap";
 import Slider from "react-slick";
 import "./ClientReview.css";
 import client1 from '../../asset/images/Client_logo/newzeland-dairy.png';
@@ -19,14 +20,22 @@ import client14 from '../../asset/images/Client_logo/quazi.jpg';
 import client15 from '../../asset/images/Client_logo/keya.jpg';
 import client16 from '../../asset/images/Client_logo/bengal_biscuits.png';
 import client17 from '../../asset/images/Client_logo/fuWang.png';
-import client18 from '../../asset/images/Client_logo/lged.jpg';
-import client19 from '../../asset/images/Client_logo/public_health.png';
 import client20 from '../../asset/images/Client_logo/unicef.png';
 import client21 from '../../asset/images/Client_logo/hysawa.jpg';
-import client22 from '../../asset/images/Client_logo/dphe.png';
+import client22 from '../../asset/images/Client_logo/csa.png';
+import Spinner from "../Spinner/Spinner.jsx";
 
-class ClientReview extends Component {
-  render() {
+// class ClientReview extends Component {
+  const ClientReview = () => {
+  // render() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2700);
+  }, []);
 
     const settings = {
       // dots: true,
@@ -90,9 +99,14 @@ class ClientReview extends Component {
     return (
       <>
 
+{loading ? (
+        <Spinner />
+      ) : (
+
 <Container style={{ marginTop: "5rem" }}>
+
         <Slider {...settings}>
-          {clientData.map((item, index) => (
+          {corporateClientData.map((item, index) => (
             <Col sm={12} md={6} lg={4} key={item.id}>
               <Card data-aos="fade-down"
       style={{height: "160px", width:"140px", display:"flex", justifyContent:"center", alignItems:"center", border: "1px solid #92CCE9", boxShadow:"1px 1px 5px #92CCE9", marginRight:"10px", marginBottom:"10px"}} className="clientReviewImgCard">
@@ -103,15 +117,18 @@ class ClientReview extends Component {
         </Slider>
  </Container>
 
+      )
+          }
+
       </>
     );
   }
-}
+// }
 
 export default ClientReview;
 
 
-const clientData = [
+const corporateClientData = [
 {
   img: client1
 },
@@ -164,12 +181,6 @@ const clientData = [
   img: client17
 },
 {
-  img: client18
-},
-{
-  img: client19
-},
-{
   img: client20
 },
 {
@@ -177,6 +188,6 @@ const clientData = [
 },
 {
   img: client22
-},
-
+}
 ]
+

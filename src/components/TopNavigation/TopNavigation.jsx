@@ -169,12 +169,22 @@ class TopNavigation extends Component {
                     <AiOutlineCaretDown />
                   </a>
                   <div className="dropdown-content">
+
+                  <NavLink
+                      className="navDropdown"
+                      to="/client/govtClient"
+                    >
+                      Govt. Client
+                    </NavLink>
+                    
                     <NavLink
                       className="navDropdown"
                       to="/client/corporateClient"
                     >
                       Corporate Client
                     </NavLink>
+
+                    
                   </div>
                 </div>
               </Nav.Link>
@@ -186,50 +196,6 @@ class TopNavigation extends Component {
                   Our Concern
                 </NavLink>
               </Nav.Link>
-
-              {/* <Nav.Link>
-                <div className="dropdown">
-                  <a
-                    className={this.state.navbarItem}
-                    to=""
-                    activeClassName="active to-empty"
-                    onClick={() =>
-                      this.setState((prevState) => ({
-                        portfolioDropdownOpen: !prevState.portfolioDropdownOpen,
-                      }))
-                    }
-                  >
-                    Our Concern
-                    <AiOutlineCaretDown />
-                  </a>
-                  <div className="dropdown-content">
-                    <NavLink to="/concern/plastic">Talukder Plastic</NavLink>
-
-                    <NavLink className="navDropdown" to="/concern/foundry">
-                      Talukder Foundry
-                    </NavLink>
-
-                    <NavLink className="navDropdown" to="/concern/upvc">
-                      Talukder uPVC
-                    </NavLink>
-
-                    <NavLink className="navDropdown" to="/concern/distribution">
-                      Talukder Distribution
-                    </NavLink>
-
-                    <NavLink className="navDropdown" to="/concern/furniture">
-                      Talukder Furniture
-                    </NavLink>
-
-                    <NavLink
-                      className="navDropdown"
-                      to="/concern/j&jenterprise"
-                    >
-                      J & J Enterprise
-                    </NavLink>
-                  </div>
-                </div>
-              </Nav.Link> */}
 
               {/* career */}
 
