@@ -90,6 +90,7 @@ import chair18 from "../../asset/images/Chair/chair18.jpg";
 import chair19 from "../../asset/images/Chair/chair19.jpg";
 import chair20 from "../../asset/images/Chair/chair20.jpg";
 import chair27 from "../../asset/images/Chair/chair27.jpg";
+import chair30 from "../../asset/images/Chair/chair30.jpg";
 import chair31 from "../../asset/images/Chair/chair31.jpg";
 import chair33 from "../../asset/images/Chair/chair33.jpg";
 import chair42 from "../../asset/images/Chair/chair42.jpg";
@@ -131,7 +132,7 @@ import plastic24 from "../../asset/images/plastic/plastic24.png";
 import plastic25 from "../../asset/images/Corporate plastic/plastic25.png";
 import plastic26 from "../../asset/images/plastic/plastic26.png";
 import plastic27 from "../../asset/images/plastic/plastic27.png";
-// import plastic28 from "../../asset/images/plastic/plastic28.png"
+import plastic28 from "../../asset/images/plastic/plastic28.png";
 import plastic29 from "../../asset/images/plastic/plastic29.png";
 import plastic30 from "../../asset/images/plastic/plastic30.png";
 import plastic31 from "../../asset/images/plastic/plastic31.png";
@@ -188,6 +189,7 @@ import plastic81 from "../../asset/images/plastic/PLASTIC CHAIR/plasticChair4.pn
 import plastic82 from "../../asset/images/plastic/PLASTIC CHAIR/plasticChair5.png";
 import plastic83 from "../../asset/images/plastic/PLASTIC CHAIR/plasticChair6.png";
 import plastic84 from "../../asset/images/plastic/PLASTIC CHAIR/plasticChair7.png";
+import plastic97 from "../../asset/images/plastic/PLASTIC CHAIR/plasticChair8.png";
 import plastic85 from "../../asset/images/plastic/plastic item/plastic1.png";
 import plastic86 from "../../asset/images/plastic/plastic item/plastic2.png";
 import plastic87 from "../../asset/images/plastic/plastic item/plastic3.png";
@@ -200,7 +202,6 @@ import plastic93 from "../../asset/images/plastic/plastic item/plastic9.png";
 import plastic94 from "../../asset/images/plastic/PLASTIC BUCKET/Delux Bucket (Plastic Handle).jpg";
 import plastic95 from "../../asset/images/plastic/PLASTIC BUCKET/Delux Bucket (Steel Handle).jpg";
 import plastic96 from "../../asset/images/plastic/PLASTIC BUCKET/Design Bucket (With Lid).jpg";
-// import plastic97 from "../../asset/images/plastic/PLASTIC BUCKET/Design Bucket (Without Lid Plastic Handle).jpg"
 import plastic98 from "../../asset/images/plastic/PLASTIC BUCKET/Design Bucket (Without Lid Steel Handle).jpg";
 import plastic99 from "../../asset/images/plastic/PLASTIC BUCKET/Design Bucket(Without Lid Plastic Handle).jpg";
 import plastic100 from "../../asset/images/plastic/PLASTIC BUCKET/Spice Pot.jpg";
@@ -211,6 +212,7 @@ import plastic104 from "../../asset/images/plastic/PLASTIC BUCKET/Delux Bucket.j
 import plastic105 from "../../asset/images/plastic/PLASTIC BUCKET/Druam Bucket.jpg";
 import plastic106 from "../../asset/images/plastic/PLASTIC BUCKET/Storage Container.jpg";
 import plastic107 from "../../asset/images/plastic/PLASTIC BUCKET/Egg Box.jpg";
+// import plastic97 from "../../asset/images/plastic/PLASTIC BUCKET/Design Bucket (Without Lid Plastic Handle).jpg"
 
 //          lged
 
@@ -797,11 +799,11 @@ const portfolioItems = [
     imgSrc: tbl67,
   },
 
-  // SLOTTED ANGLE RACK
+  // INDUSTRIAL FURNITURE
   {
     id: 68,
     title: "SLOTTED ANGLE RACK",
-    category: "office furniture",
+    category: "INDUSTRIAL FURNITURE",
     code: "TFSAR-068",
     size: "L1200 X W400 X H1800mm",
     imgSrc: tbl68,
@@ -810,7 +812,7 @@ const portfolioItems = [
   {
     id: 69,
     title: "SLOTTED ANGLE RACK",
-    category: "office furniture",
+    category: "INDUSTRIAL FURNITURE",
     code: "TFSAR-069",
     size: "L900 X W300 X H1800mm",
     imgSrc: tbl69,
@@ -821,7 +823,7 @@ const portfolioItems = [
   {
     id: 70,
     title: "HEAVY DUTY RACK",
-    category: "office furniture",
+    category: "INDUSTRIAL FURNITURE",
     code: "TFHDR-070",
     size: "L2400 X W600 X H2400mm",
     imgSrc: tbl70,
@@ -922,22 +924,839 @@ const portfolioItems = [
     imgSrc: tbl80,
   },
 
-  ////     chair item
+  ///                             OFFICE FURNITURE CHAIR -> (501 - )
+
+  ///                         conference table(401-408)
+
   {
-    id: 1001,
-    title: "SWIMMING POOL FURNITURE",
-    category: "INDUSTRIAL FURNITURE",
-    code: "TFSPF-080",
-    size: "L1980 X W660 X H790mm",
-    imgSrc: chair3,
+    id: 401,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-001",
+    size: "L3600 X W1200 X H750mm",
+    imgSrc: chair4,
   },
   {
-    id: 1002,
-    title: "SWIMMING POOL FURNITURE",
-    category: "INDUSTRIAL FURNITURE",
-    code: "TFSPF-080",
-    size: "L1980 X W660 X H790mm",
+    id: 402,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-002",
+    size: "L3600 X W1200 X H750mm",
     imgSrc: chair4,
+  },
+  {
+    id: 403,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-003",
+    size: "L6000 X W1500 X H750mm",
+    imgSrc: chair4,
+  },
+  {
+    id: 404,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-004",
+    size: "L2400 X W1200 X H750mm",
+    imgSrc: chair4,
+  },
+  {
+    id: 405,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-005",
+    size: "L2400 X W1200 X H750mm",
+    imgSrc: chair4,
+  },
+  {
+    id: 406,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-006",
+    size: "L3000 X W1200 X H750mm",
+    imgSrc: chair4,
+  },
+  {
+    id: 407,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-007",
+    size: "L2400 X W1200 X H750mm",
+    imgSrc: chair4,
+  },
+  {
+    id: 408,
+    title: "conference table",
+    category: "office furniture",
+    code: "TFCON-008",
+    size: "L1200 X W1200 X H750mm",
+    imgSrc: chair4,
+  },
+
+  ///                         SWIVEL CHAIR(501 - )
+
+  {
+    id: 501,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-001",
+    imgSrc: chair4,
+  },
+  {
+    id: 502,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-002",
+    imgSrc: chair4,
+  },
+  {
+    id: 503,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-003",
+    imgSrc: chair4,
+  },
+  {
+    id: 504,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-004",
+    imgSrc: chair4,
+  },
+  {
+    id: 505,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-005",
+    imgSrc: chair5,
+  },
+  {
+    id: 506,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-006",
+    imgSrc: chair4,
+  },
+  {
+    id: 507,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-007",
+    imgSrc: chair7,
+  },
+  {
+    id: 508,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-008",
+    imgSrc: chair4,
+  },
+  {
+    id: 509,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-009",
+    imgSrc: chair4,
+  },
+  {
+    id: 510,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-010",
+    imgSrc: chair10,
+  },
+  {
+    id: 511,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-011",
+    imgSrc: chair4,
+  },
+  {
+    id: 512,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-012",
+    imgSrc: chair4,
+  },
+  {
+    id: 513,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFMCO-013",
+    imgSrc: chair4,
+  },
+  {
+    id: 514,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-014",
+    imgSrc: chair4,
+  },
+  {
+    id: 515,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-015",
+    imgSrc: chair4,
+  },
+  {
+    id: 516,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-016",
+    imgSrc: chair16,
+  },
+  {
+    id: 517,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-017",
+    imgSrc: chair4,
+  },
+  {
+    id: 518,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-018",
+    imgSrc: chair18,
+  },
+  {
+    id: 519,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-019",
+    imgSrc: chair19,
+  },
+  {
+    id: 520,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-020",
+    imgSrc: chair20,
+  },
+  {
+    id: 521,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-021",
+    imgSrc: chair4,
+  },
+  {
+    id: 522,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-022",
+    imgSrc: chair4,
+  },
+  {
+    id: 523,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-023",
+    imgSrc: chair4,
+  },
+  {
+    id: 524,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFECO-024",
+    imgSrc: chair4,
+  },
+  {
+    id: 525,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TF0CO-025",
+    imgSrc: chair4,
+  },
+  {
+    id: 526,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TF0CO-026",
+    imgSrc: chair4,
+  },
+  {
+    id: 527,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TF0CO-027",
+    imgSrc: chair27,
+  },
+  {
+    id: 528,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TF0CO-028",
+    imgSrc: chair4,
+  },
+  {
+    id: 529,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TF0CO-029",
+    imgSrc: chair4,
+  },
+  {
+    id: 530,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TF0CO-030",
+    imgSrc: chair30,
+  },
+  {
+    id: 531,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFOCO-031",
+    imgSrc: chair31,
+  },
+  {
+    id: 532,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFOCO-032",
+    imgSrc: chair4,
+  },
+  {
+    id: 533,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFOCO-033",
+    imgSrc: chair33,
+  },
+  {
+    id: 534,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-034",
+    imgSrc: chair4,
+  },
+  {
+    id: 535,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-035",
+    imgSrc: chair4,
+  },
+  {
+    id: 536,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-036",
+    imgSrc: chair4,
+  },
+  {
+    id: 537,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-037",
+    imgSrc: chair4,
+  },
+  {
+    id: 538,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-038",
+    imgSrc: chair4,
+  },
+  {
+    id: 539,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-039",
+    imgSrc: chair4,
+  },
+  {
+    id: 540,
+    title: "SWIVEL CHAIR",
+    category: "office furniture",
+    code: "TFCCO-040",
+    imgSrc: chair4,
+  },
+
+  {
+    id: 541,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-041",
+    imgSrc: chair4,
+  },
+  {
+    id: 542,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-042",
+    imgSrc: chair42,
+  },
+  {
+    id: 543,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-043",
+    imgSrc: chair4,
+  },
+  {
+    id: 544,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-044",
+    imgSrc: chair4,
+  },
+  {
+    id: 545,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-045",
+    imgSrc: chair4,
+  },
+  {
+    id: 546,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-046",
+    imgSrc: chair4,
+  },
+  {
+    id: 547,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-047",
+    imgSrc: chair4,
+  },
+  {
+    id: 548,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-048",
+    imgSrc: chair4,
+  },
+  {
+    id: 549,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-049",
+    imgSrc: chair4,
+  },
+  {
+    id: 550,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-050",
+    imgSrc: chair50,
+  },
+  {
+    id: 551,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-051",
+    imgSrc: chair51,
+  },
+  {
+    id: 552,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-052",
+    imgSrc: chair51,
+  },
+  {
+    id: 553,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-053",
+    imgSrc: chair53,
+  },
+  {
+    id: 554,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-054",
+    imgSrc: chair54,
+  },
+  {
+    id: 555,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-055",
+    imgSrc: chair55,
+  },
+  {
+    id: 556,
+    title: "FIXED CHAIR",
+    category: "office furniture",
+    code: "TFVCO-056",
+    imgSrc: chair4,
+  },
+  {
+    id: 557,
+    title: "AUDITORIUM CHAIR",
+    category: "office furniture",
+    code: "TFACO-057",
+    imgSrc: chair4,
+  },
+  {
+    id: 558,
+    title: "AUDITORIUM CHAIR",
+    category: "office furniture",
+    code: "TFACO-058",
+    imgSrc: chair4,
+  },
+  {
+    id: 559,
+    title: "GROUP CHAIR",
+    category: "office furniture",
+    code: "TFGCO-059",
+    imgSrc: chair4,
+  },
+  {
+    id: 560,
+    title: "GROUP CHAIR",
+    category: "office furniture",
+    code: "TFGCO-060",
+    imgSrc: chair4,
+  },
+  {
+    id: 561,
+    title: "CLASSROOM CHAIR",
+    category: "lged",
+    code: "TFCRC-061",
+    imgSrc: chair61,
+  },
+  {
+    id: 562,
+    title: "CLASSROOM CHAIR",
+    category: "lged",
+    code: "TFCRC-062",
+    imgSrc: chair62,
+  },
+  {
+    id: 563,
+    title: "CLASSROOM CHAIR",
+    category: "lged",
+    code: "TFCRC-063",
+    imgSrc: chair61,
+  },
+  {
+    id: 564,
+    title: "CLASSROOM CHAIR",
+    category: "lged",
+    code: "TFCRC-064",
+    imgSrc: chair62,
+  },
+  {
+    id: 565,
+    title: "CLASSROOM CHAIR",
+    category: "lged",
+    code: "TFCRC-065",
+    imgSrc: chair65,
+  },
+  {
+    id: 566,
+    title: "CLASSROOM TABLE WITH BENCH",
+    category: "lged",
+    code: "TFHLB-066",
+    imgSrc: chair61,
+    size: "L1800 X W400 X H730MM(HIGH BENCH)",
+    size2: "L1800 X W300 X H400MM(LOW BENCH)",
+  },
+  {
+    id: 567,
+    title: "CLASSROOM TABLE WITH BENCH",
+    category: "lged",
+    code: "TFHLB-067",
+    imgSrc: chair61,
+    size: "L1500 X W450 X H750MM(HIGH BENCH)",
+    size2: "L1500 X W300 X H400MM(LOW BENCH)",
+  },
+  // {
+  //   //68 already done
+  // }
+  {
+    id: 569,
+    title: "TEACHERS TABLE",
+    category: "lged",
+    code: "TFTTS-069",
+    imgSrc: chair61,
+    size: "L900 X W500 X H750MM",
+  },
+  {
+    id: 570,
+    title: "PODIUM",
+    category: "lged",
+    code: "TFPOD-070",
+    imgSrc: chair61,
+    size: "L750 X W550 X H1250MM",
+  },
+  {
+    id: 571,
+    title: "PODIUM",
+    category: "lged",
+    code: "TFPOD-071",
+    imgSrc: chair61,
+    size: "L850 X W600 X H1250MM",
+  },
+
+  ////      FILE CABINET
+
+  {
+    id: 572,
+    title: "FILE CABINET",
+    category: "lged",
+    code: "TFSFC-072",
+    imgSrc: chair61,
+    size: "L482 X W550 X H720MM",
+  },
+  {
+    id: 573,
+    title: "FILE CABINET",
+    category: "lged",
+    code: "TFSFC-073",
+    imgSrc: chair61,
+    size: "L482 X W550 X H1040MM",
+  },
+  // 573 & 574 CODE ARE SAME COZ I FOLLOW THE BUSHIER & SIR SUGGEST ME
+  // {
+  //   id: 574,
+  //   title: "FILE CABINET",
+  //   category: "lged",
+  //   code : "TFSFC-073",
+  //   imgSrc: chair61,
+  //   size: "L482 X W550 X H1370MM",
+  // },
+
+  ///         COMBINED CABINET
+
+  {
+    id: 575,
+    title: "COMBINED CABINET",
+    category: "lged",
+    code: "TFSCC-074",
+    imgSrc: chair61,
+    size: "L900 X W550 X H1200MM",
+  },
+
+  /// OFFICE ALMIRAH
+  {
+    id: 576,
+    title: "STEEL ALMIRAH",
+    category: "lged",
+    code: "TFSOA-075",
+    imgSrc: chair61,
+    size: "L900 X W500 X H1850MM",
+  },
+  {
+    id: 577,
+    title: "STEEL ALMIRAH",
+    category: "lged",
+    code: "TFSOA-076",
+    imgSrc: chair61,
+    size: "L910 X W480 X H1930MM",
+  },
+  {
+    id: 578,
+    title: "STEEL ALMIRAH",
+    category: "lged",
+    code: "TFSOA-077",
+    imgSrc: chair61,
+    size: "L910 X W480 X H1930MM",
+  },
+  {
+    id: 579,
+    title: "OFFICE ALMIRAH",
+    category: "office furniture",
+    code: "TFSOA-078",
+    imgSrc: chair61,
+    size: "L900 X W450 X H1800MM",
+  },
+
+  {
+    id: 580,
+    title: "OFFICE ALMIRAH",
+    category: "office furniture",
+    code: "TFSOA-079",
+    imgSrc: chair61,
+    size: "L900 X W450 X H1800MM",
+  },
+  {
+    id: 581,
+    title: "OFFICE ALMIRAH",
+    category: "office furniture",
+    code: "TFSOA-080",
+    imgSrc: chair61,
+    size: "L1000 X W450 X H1800MM",
+  },
+
+  //               OFFICE LOCKER
+  {
+    id: 582,
+    title: "OFFICE LOCKER",
+    category: "office furniture",
+    code: "TFSOl-077",
+    imgSrc: chair61,
+    size: "L900 X W500 X H1850MM",
+  },
+  {
+    id: 583,
+    title: "OFFICE LOCKER",
+    category: "office furniture",
+    code: "TFSOl-078",
+    imgSrc: chair61,
+    size: "L350 X W500 X H1930MM",
+  },
+
+  // office sofa
+  {
+    id: 584,
+    title: "OFFICE SOFA",
+    category: "office furniture",
+    code: "TFOSF-079",
+    imgSrc: chair61,
+    size: "L1650 X W700 X H750MM",
+  },
+  {
+    id: 585,
+    title: "OFFICE SOFA",
+    category: "office furniture",
+    code: "TFOSF-080",
+    imgSrc: chair61,
+    size: "L1800 X W700 X H720MM",
+  },
+  {
+    id: 586,
+    title: "OFFICE SOFA",
+    category: "office furniture",
+    code: "TFOSF-081",
+    imgSrc: chair61,
+    size: "L685 X W750 X H635MM(SINGLE SEAT)",
+    size2: "L1335 X W750 X H635MM(DOUBLE SEAT)",
+  },
+  {
+    id: 587,
+    title: "OFFICE SOFA",
+    category: "office furniture",
+    code: "TFOSF-082",
+    imgSrc: chair61,
+    size: "L1135 X W750 X H635MM",
+  },
+  {
+    id: 588,
+    title: "OFFICE SOFA",
+    category: "office furniture",
+    code: "TFOSF-083",
+    imgSrc: chair61,
+    size: "L1800 X W750 X H700MM(3 SEATER)",
+  },
+  {
+    id: 589,
+    title: "OFFICE SOFA",
+    category: "office furniture",
+    code: "TFOSF-084",
+    imgSrc: chair61,
+    size: "L600 X W700 X H750MM(SINGLE SEATER)",
+    size2: "L1350 X W700 X H750MM(DOUBLE SEATER)",
+  },
+
+  /////                        WORK STATION
+  {
+    id: 590,
+    title: "WORK STATION",
+    category: "office furniture",
+    code: "TFWSO-085",
+    imgSrc: chair61,
+    size: "L2500 X W650 X H1200MM",
+  },
+  {
+    id: 591,
+    title: "WORK STATION",
+    category: "office furniture",
+    code: "TFWSO-086",
+    imgSrc: chair61,
+    size: "L1200 X W1200 X H1050MM",
+  },
+  {
+    id: 592,
+    title: "WORK STATION",
+    category: "office furniture",
+    code: "TFWSO-087",
+    imgSrc: chair61,
+    size: "L3000 X W1650 X H1500MM",
+  },
+  {
+    id: 593,
+    title: "WORK STATION",
+    category: "office furniture",
+    code: "TFWSO-088",
+    imgSrc: chair61,
+    size: "L3000 X W3000 X H1050MM",
+  },
+  {
+    id: 594,
+    title: "WORK STATION",
+    category: "office furniture",
+    code: "TFWSO-089",
+    imgSrc: chair61,
+    size: "L3000 X W3000 X H1050MM",
+  },
+  {
+    id: 595,
+    title: "WORK STATION",
+    category: "office furniture",
+    code: "TFWSO-090",
+    imgSrc: chair61,
+    size: "L2400 X W1200 X H1050MM",
+  },
+
+  ///        FLUSH DOOR
+  {
+    id: 596,
+    title: "FLUSH DOOR",
+    category: "office furniture",
+    code: "TFFDD-091",
+    imgSrc: chair61,
+    size: "L600~900 X H2080MM",
+  },
+  {
+    id: 597,
+    title: "FLUSH DOOR",
+    category: "office furniture",
+    code: "TFFDD-092",
+    imgSrc: chair61,
+    size: "L600~900 X H2080MM",
+  },
+  {
+    id: 598,
+    title: "FLUSH DOOR",
+    category: "office furniture",
+    code: "TFFDD-093",
+    imgSrc: chair61,
+    size: "L600~900 X H2080MM",
+  },
+
+  ///       SOLID WOODEN DOOR
+  {
+    id: 599,
+    title: "SOLID WOODEN DOOR",
+    category: "office furniture",
+    code: "TFFDD-094",
+    imgSrc: chair61,
+    size: "L600~1050 X H2080MM",
+  },
+  {
+    id: 600,
+    title: "SOLID WOODEN DOOR",
+    category: "office furniture",
+    code: "TFFDD-095",
+    imgSrc: chair61,
+    size: "L600~1050 X H2080MM",
+  },
+  {
+    id: 601,
+    title: "SOLID WOODEN DOOR",
+    category: "office furniture",
+    code: "TFFDD-096",
+    imgSrc: chair61,
+    size: "L600~1050 X H2080MM",
   },
 
   ////                              ------------      PLASTIC  (101- )           --------------
@@ -991,7 +1810,7 @@ const portfolioItems = [
   },
   {
     id: 107,
-    category: "PLASTIC TOY",
+    category: "PLASTIC HOUSEHOLD",
     imgSrc: plastic7,
     title: "BABY POTI",
     code: "17001",
@@ -1089,6 +1908,17 @@ const portfolioItems = [
   },
 
   {
+    id: 109,
+    category: "PLASTIC FURNITURE",
+    imgSrc: plastic97,
+    title: "KING SUPER CHAIR(BATON)",
+    code: "21137",
+    color: "#9c8363",
+  },
+
+  //                                    BUCKET START
+
+  {
     id: 121,
     category: "PLASTIC HOUSEHOLD",
     imgSrc: plastic21,
@@ -1104,6 +1934,106 @@ const portfolioItems = [
     size: "16/20 Ltr.",
     code: "11350/11351/11356/11357",
   },
+  {
+    id: 207,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic99,
+    title: "DESIGN BUCKET(PLASTIC HANDLE)",
+    code: "11306/11308/11311/11317/11321/11326/11331",
+    color: "BLUE/BLUE/BLUE/BLUE/BLUE/BLUE/BLUE",
+    size: "5,8,10,16,20,25,30 Ltr.",
+  },
+
+  {
+    id: 208,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic104,
+    title: "DELUX BUCKET(STEEL handle)",
+    code: "11241/11246/11252/11256/11259/11262/11265/11268/11271",
+    color: "blue",
+    size: "4,8,12,15,18,20,22,25,30 Ltr.",
+  },
+
+  {
+    id: 133,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic33,
+    title: "DESIGN BUCKET(PLASTIC HANDLE)",
+    code: "11305/11307/11310/11316/11320/11325/11330",
+    color: "RED/RED/RED/RED/RED/RED/RED",
+    size: " 5/8/10/16/20/25/30 Ltr.",
+  },
+
+  {
+    id: 134,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic34,
+    title: "DELUX BUCKET(PLASTIC HANDLE)",
+    code: "11141/11147/11150/11153/11157/11162/11170",
+    color: "blue/blue/blue/blue/blue/blue/blue",
+    size: " 8/12/15/20/22/25/30 Ltr.",
+  },
+  {
+    id: 135,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic35,
+    title: "DRUM BUCKET WITH LID",
+    size: "75 Ltr.",
+    code: "11465/11466",
+    color: "#2db300/#2db300",
+  },
+  {
+    id: 193,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic94,
+    title: "DELUX BUCKET (Plastic Handle) ",
+    code: "11140/11146/11149/11152/11156/11161/11169",
+    color: "RED/RED/RED/RED/RED/RED/RED",
+    size: "8,12,15,20,22,25,30 Ltr.",
+  },
+  {
+    id: 194,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic95,
+    title: "Delux Bucket (Steel Handle) ",
+    code: "11240/11245/11251/11255/11258/11261/11264/11267/11270",
+    color: "RED/RED/RED/RED/RED/RED/RED/RED/RED",
+    // longCode : "11240,11245,11251,11255,11258,11261,11264,11267,11270",
+    sameColor: "RED",
+    size: "4,8,12,15,18,20,22,25,30 Ltr.",
+  },
+  {
+    id: 195,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic96,
+    title: "Design Bucket (With Lid)",
+    code: "11105/11106/11107/11108/11110/11111/11116/11117/11120/11121/11125/11126/11130/11131",
+    color: "RED/blue",
+    size: "5,8,10,16,20,25,30 Ltr.",
+  },
+
+  {
+    id: 197,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic98,
+    title: "Design Bucket(steel Handle)",
+    code: "11205/11207/11210/11216/11220/11225/11230",
+    color: "RED/RED/RED/RED/RED/RED/RED",
+    size: "5,8,10,16,20,25,30 Ltr.",
+  },
+
+  {
+    id: 198,
+    category: "PLASTIC HOUSEHOLD",
+    imgSrc: plastic28,
+    title: "Twist Bucket Bucket(steel Handle)",
+    code: "11385/11386/11387/11391/11392/11393",
+    color: "red/blue/#006600/red/blue/#006600",
+    size: "16, 20 Ltr.",
+  },
+
+  ///                                BUCKET END
+
   {
     id: 123,
     category: "PLASTIC HOUSEHOLD",
@@ -1178,34 +2108,7 @@ const portfolioItems = [
   //   imgSrc: plastic28,
   //   title: "TWIST BUCKET(steel handle)",
   // },
-  {
-    id: 133,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic33,
-    title: "DESIGN BUCKET(PLASTIC HANDLE)",
-    code: "11305/11307/11310/11316/11320/11325/11330",
-    color: "RED/RED/RED/RED/RED/RED/RED",
-    size: " 5/8/10/16/20/25/30 Ltr.",
-  },
 
-  {
-    id: 134,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic34,
-    title: "DELUX BUCKET(PLASTIC HANDLE)",
-    code: "11141/11147/11150/11153/11157/11162/11170",
-    color: "blue/blue/blue/blue/blue/blue/blue",
-    size: " 8/12/15/20/22/25/30 Ltr.",
-  },
-  {
-    id: 135,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic35,
-    title: "DRUM BUCKET WITH LID",
-    size: "75 Ltr.",
-    code: "11465/11466",
-    color: "#2db300/#2db300",
-  },
   {
     id: 117,
     category: "PLASTIC FURNITURE",
@@ -1371,13 +2274,13 @@ const portfolioItems = [
   //   category: "plastic",
   //   imgSrc: plastic54,
   // },
-  {
-    id: 155,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic55,
-    title: "SMILE TRAY",
-    size: "SMALL",
-  },
+  // {
+  //   id: 155,
+  //   category: "PLASTIC HOUSEHOLD",
+  //   imgSrc: plastic55,
+  //   title: "SMILE TRAY",
+  //   size: "SMALL"
+  // },
   {
     id: 156,
     category: "PLASTIC HOUSEHOLD",
@@ -1672,35 +2575,7 @@ const portfolioItems = [
     color: "RED/BLUE",
   },
   // again bucket start
-  {
-    id: 193,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic94,
-    title: "DELUX BUCKET (Plastic Handle) ",
-    code: "11140/11146/11149/11152/11156/11161/11169",
-    color: "RED/RED/RED/RED/RED/RED/RED",
-    size: "8,12,15,20,22,25,30 Ltr.",
-  },
-  {
-    id: 194,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic95,
-    title: "Delux Bucket (Steel Handle) ",
-    code: "11240/11245/11251/11255/11258/11261/11264/11267/11270",
-    color: "RED/RED/RED/RED/RED/RED/RED/RED/RED",
-    // longCode : "11240,11245,11251,11255,11258,11261,11264,11267,11270",
-    sameColor: "RED",
-    size: "4,8,12,15,18,20,22,25,30 Ltr.",
-  },
-  {
-    id: 195,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic96,
-    title: "Design Bucket (With Lid)",
-    code: "11105/11106/11107/11108/11110/11111/11116/11117/11120/11121/11125/11126/11130/11131",
-    color: "RED/blue",
-    size: "5,8,10,16,20,25,30 Ltr.",
-  },
+
   // {
   //   id: 196,
   //   category: "PLASTIC HOUSEHOLD",
@@ -1711,26 +2586,6 @@ const portfolioItems = [
   //   // longCode : "11240,11245,11251,11255,11258,11261,11264,11267,11270",
   //   size : "5,8,10,16,20,25,30 Ltr."
   // },
-
-  {
-    id: 197,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic98,
-    title: "Design Bucket(Plastic Handle)",
-    code: "11205/11207/11210/11216/11220/11225/11230",
-    color: "RED/RED/RED/RED/RED/RED/RED",
-    size: "5,8,10,16,20,25,30 Ltr.",
-  },
-
-  {
-    id: 198,
-    category: "PLASTIC HOUSEHOLD",
-    imgSrc: plastic99,
-    title: "Design Bucket(Plastic Handle)",
-    code: "11306/11308/11311/11317/11321/11326/11331",
-    color: "blue/blue/blue/blue/blue/blue/blue",
-    size: "5,8,10,16,20,25,30 Ltr.",
-  },
 
   {
     id: 199,
@@ -1809,6 +2664,8 @@ const portfolioItems = [
     code: "17013/17014",
     color: "YELLOW/PINK",
   },
+
+  ///                                         OFFICE FURNITURE(CHAIR)
 
   //                                 --------   lged(200)  --------
 
