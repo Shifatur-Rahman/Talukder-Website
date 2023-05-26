@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./BoardOfDirector.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { BsFacebook } from "react-icons/bs";
@@ -21,114 +21,340 @@ const BoardOfDirector = () => {
   }, []);
   return (
     <>
-         {loading ? (
+      {loading ? (
         <Spinner />
-      ) :
-      <div className="profile-area">
-        <Container style={{marginTop:"3rem"}}>
-          <Row>
-            <Col lg={3} md={6} sm={12}>
-              <div className="card">
-                <div className="img1">
-                  <img src={profile1Img} alt="one img" />
-                </div>
+      ) : (
+        <div className="profile-area">
+          <Container style={{ marginTop: "3rem" }}>
+            <Row>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
 
-                <div className="img2">
-                  <img src={profile2Img} alt="two img" />
-                </div>
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
 
-                <div className="main-text">
-                  <h2>Mr. Md Samsul Arifin</h2>
-                  <p style={{ fontSize: "12px" }} className="main-text-p">Managing Director</p>
-                </div>
+                  <div className="main-text">
+                    <h2>Mr. Md Samsul Arifin</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Managing Director
+                    </p>
+                  </div>
 
-                <div className="socials" style={{ fontSize: "25px" }}>
-                  <BsFacebook style={{ marginRight: "5px" }} />
-                  <AiFillTwitterCircle style={{ marginRight: "5px" }} />
-                  <GrPinterest style={{ marginRight: "5px" }} />
-                  <AiFillGooglePlusCircle />
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
 
-            <Col lg={3} md={6} sm={12}>
-              <div className="card">
-                <div className="img1">
-                  <img src={profile1Img} alt="one img" />
-                </div>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
 
-                <div className="img2">
-                  <img src={profile3Img} alt="two img" />
-                </div>
+                  <div className="img2">
+                    <img src={profile3Img} alt="two img" />
+                  </div>
 
-                <div className="main-text">
-                  <h2>Mrs. Ferdausi Akter</h2>
-                  <p style={{ fontSize: "12px" }} className="main-text-p">Deputy Managing Director</p>
-                  <p></p>
-                </div>
+                  <div className="main-text">
+                    <h2>Mrs. Ferdausi Akter</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Deputy Managing Director
+                    </p>
+                    <p></p>
+                  </div>
 
-                <div className="socials" style={{ fontSize: "25px" }}>
-                  <BsFacebook style={{ marginRight: "5px" }} />
-                  <AiFillTwitterCircle style={{ marginRight: "5px" }} />
-                  <GrPinterest style={{ marginRight: "5px" }} />
-                  <AiFillGooglePlusCircle />
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
 
-            <Col lg={3} md={6} sm={12}>
-              <div className="card">
-                <div className="img1">
-                  <img src={profile1Img} alt="one img" />
-                </div>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
 
-                <div className="img2">
-                  <img src={profile2Img} alt="two img" />
-                </div>
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
 
-                <div className="main-text">
-                  <h2>Al Amin Masud Alam</h2>
-                  <p style={{ fontSize: "12px" }} className="main-text-p">General Manager</p>
-                  <p></p>
-                </div>
+                  <div className="main-text">
+                    <h2>Al Amin Masud Alam</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      General Manager
+                    </p>
+                    <p></p>
+                  </div>
 
-                <div className="socials" style={{ fontSize: "25px" }}>
-                  <BsFacebook style={{ marginRight: "5px" }} />
-                  <AiFillTwitterCircle style={{ marginRight: "5px" }} />
-                  <GrPinterest style={{ marginRight: "5px" }} />
-                  <AiFillGooglePlusCircle />
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
 
-            <Col lg={3} md={6} sm={12}>
-              <div className="card">
-                <div className="img1">
-                  <img src={profile1Img} alt="one img" />
-                </div>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
 
-                <div className="img2">
-                  <img src={profile2Img} alt="two img" />
-                </div>
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
 
-                <div className="main-text">
-                  <h2>Md. Akram Hossain</h2>
-                  <p style={{ fontSize: "12px" }} className="main-text-p">General Manager</p>
-                  <p></p>
-                </div>
+                  <div className="main-text">
+                    <h2>Md. Akram Hossain</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      General Manager
+                    </p>
+                    <p></p>
+                  </div>
 
-                <div className="socials">
-                  <BsFacebook style={{ marginRight: "5px" }} />
-                  <AiFillTwitterCircle style={{ marginRight: "5px" }} />
-                  <GrPinterest style={{ marginRight: "5px" }} />
-                  <AiFillGooglePlusCircle />
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-}
+              </Col>
+            </Row>
+
+            <Row style={{ marginTop: "25px" }}>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Mr. Md Samsul Arifin</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Managing Director
+                    </p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile3Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Mrs. Ferdausi Akter</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Deputy Managing Director
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Al Amin Masud Alam</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      General Manager
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Md. Akram Hossain</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      General Manager
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+
+            <Row style={{ marginTop: "25px" }}>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Mr. Md Samsul Arifin</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Managing Director
+                    </p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile3Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Mrs. Ferdausi Akter</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Deputy Managing Director
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Al Amin Masud Alam</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      General Manager
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Md. Akram Hossain</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      General Manager
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      )}
     </>
   );
 };
