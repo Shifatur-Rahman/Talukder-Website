@@ -195,7 +195,7 @@ const Portfolio = () => {
                   )}
                 </div>
 
-                <div className="dropdown">
+                {/* <div className="dropdown">
                   <button
                     // value="office furniture"
                     onClick={handleCategory}
@@ -203,7 +203,7 @@ const Portfolio = () => {
                   >
                     OFFICE
                   </button>
-                </div>
+                </div> */}
               </div>
             </Col>
 
@@ -222,14 +222,7 @@ const Portfolio = () => {
 
                   .map((item) => (
                     // data-aos='zoom-in'
-                    <div
-                      className="portfolio-item"
-                      key={item.id}
-                      // data-aos="fade-up"
-                      // data-aos-anchor="#example-anchor"
-                      // data-aos-offset="500"
-                      // data-aos-duration="1000"
-                    >
+                    <div className="portfolio-item" key={item.id}>
                       <img
                         className="portfolio-item-img"
                         src={item.imgSrc}
@@ -237,7 +230,7 @@ const Portfolio = () => {
                         style={{ cursor: "pointer" }}
                         onClick={() => handleImageClick(item.imgSrc)}
                       />
-                      <div style={{ marginTop: "12px" }}>
+                      <div style={{ marginTop: "12px", width: "100%" }}>
                         {item.title && (
                           <p className="itemTitle">
                             <strong>Name : </strong>
@@ -247,18 +240,7 @@ const Portfolio = () => {
                             </span>
                           </p>
                         )}
-                        {/* {item.code && (
-                        <p className="itemTitle">
-                          <strong>Code : </strong>
-                          {item.code}  
-                        </p>
-                      )} */}
-                        {/* {item.color && (
-                        <p className="itemTitle">
-                          <strong>Color : </strong>
-                          <span className="itemSize"> {item.color} </span>
-                        </p>
-                      )} */}
+
                         {item.size && (
                           <p className="itemTitle">
                             <strong>Size : </strong>
@@ -282,16 +264,21 @@ const Portfolio = () => {
                           </p>
                         )}
 
-                        {item.longCode && (
-                          <div className="itemTitle">
+                        {item.code2 && (
+                          <p
+                            style={{
+                              width: "100px",
+                              fontSize: "10px",
+                              overflow: "",
+                              // height: "100px",
+                              // display: "inline-block",
+                              // overflow: "hidden",
+                              boxSizing: "border-box",
+                            }}
+                          >
                             <strong>Code : </strong>
-                            <p style={{ fontSize: "8px" }}>
-                              {" "}
-                              11240,11245,11251,11255,11258,11261{" "}
-                            </p>
-                            <br />
-                            <p>1455, 4645</p>
-                          </div>
+                            {item.code2}
+                          </p>
                         )}
 
                         {item.color && item.code ? (

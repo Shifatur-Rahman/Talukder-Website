@@ -147,9 +147,11 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="main-text">
-                    <h2>Mr. Md Samsul Arifin</h2>
+                    <h2>MD. Majharul Islam</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      Managing Director
+                    Group Asst. General Manager <br />
+                    (VAT, TAX & Audit)
+
                     </p>
                   </div>
 
@@ -169,13 +171,15 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="img2">
-                    <img src={profile3Img} alt="two img" />
+                    <img src={profile2Img} alt="two img" />
                   </div>
 
                   <div className="main-text">
-                    <h2>Mrs. Ferdausi Akter</h2>
+                    <h2>Md. Al-Mamunur Rashid</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      Deputy Managing Director
+                    Assistant General Manager <br />
+                    Head of Production (Fabrication)
+
                     </p>
                     <p></p>
                   </div>
@@ -200,11 +204,11 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="main-text">
-                    <h2>Al Amin Masud Alam</h2>
+                    <h2>MD. Amir Hamza</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      General Manager
-                    </p>
-                    <p></p>
+                      Asst. General Manager <br />
+                      Head of Production (Furniture)
+                    </p>                    
                   </div>
 
                   <div className="socials" style={{ fontSize: "25px" }}>
@@ -227,9 +231,10 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="main-text">
-                    <h2>Md. Akram Hossain</h2>
+                    <h2>Md. Asadullah</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      General Manager
+                    Sr. Manager <br />
+                    (Head of Finance & Legal)
                     </p>
                     <p></p>
                   </div>
@@ -256,9 +261,10 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="main-text">
-                    <h2>Mr. Md Samsul Arifin</h2>
+                    <h2>Md. Mostafizur Rahman </h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      Managing Director
+                    Sr. Manager <br />
+                    Head of Admin (Factory)
                     </p>
                   </div>
 
@@ -278,13 +284,13 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="img2">
-                    <img src={profile3Img} alt="two img" />
+                    <img src={profile2Img} alt="two img" />
                   </div>
 
                   <div className="main-text">
-                    <h2>Mrs. Ferdausi Akter</h2>
+                    <h2>Abdullah Al Momin</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      Deputy Managing Director
+                    Manager <br /> (Head of SCM)
                     </p>
                     <p></p>
                   </div>
@@ -309,9 +315,9 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="main-text">
-                    <h2>Al Amin Masud Alam</h2>
+                    <h2>Md. Shafiqur Rahman</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      General Manager
+                      Sr. Manager <br /> Corporate Sales
                     </p>
                     <p></p>
                   </div>
@@ -336,9 +342,119 @@ const BoardOfDirector = () => {
                   </div>
 
                   <div className="main-text">
-                    <h2>Md. Akram Hossain</h2>
+                    <h2 style={{fontSize:"12px"}}>Abu Tahmid Md.Mahmud E-Elahi</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
-                      General Manager
+                      Manager <br /> (Head of Tender Sales)
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+
+            <Row style={{ marginTop: "25px" }}>
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Hasnatul Karim Talukder </h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Manager <br />
+                   IT Department
+                    </p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Prince Md. Saiyadina Islam</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                    Manager <br />  (HR & Admin)
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2>Md. Monjur</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Sr. Manager <br />
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="socials" style={{ fontSize: "25px" }}>
+                    <BsFacebook style={{ marginRight: "5px" }} />
+                    <AiFillTwitterCircle style={{ marginRight: "5px" }} />
+                    <GrPinterest style={{ marginRight: "5px" }} />
+                    <AiFillGooglePlusCircle />
+                  </div>
+                </div>
+              </Col>
+
+              <Col lg={3} md={6} sm={12}>
+                <div className="card">
+                  <div className="img1">
+                    <img src={profile1Img} alt="one img" />
+                  </div>
+
+                  <div className="img2">
+                    <img src={profile2Img} alt="two img" />
+                  </div>
+
+                  <div className="main-text">
+                    <h2 style={{fontSize:"12px"}}>S. K. Abdullah Al-Masud</h2>
+                    <p style={{ fontSize: "12px" }} className="main-text-p">
+                      Manager(Design) <br /> Product Development
                     </p>
                     <p></p>
                   </div>
