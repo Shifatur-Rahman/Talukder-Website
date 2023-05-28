@@ -265,17 +265,7 @@ const Portfolio = () => {
                         )}
 
                         {item.code2 && (
-                          <p
-                            style={{
-                              width: "100px",
-                              fontSize: "10px",
-                              overflow: "",
-                              // height: "100px",
-                              // display: "inline-block",
-                              // overflow: "hidden",
-                              boxSizing: "border-box",
-                            }}
-                          >
+                          <p className="code2">
                             <strong>Code : </strong>
                             {item.code2}
                           </p>
