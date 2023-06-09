@@ -7,7 +7,6 @@ import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-// import AOS from "aos";
 import "aos/dist/aos.css";
 import PageLoader from "../PageLoader/PageLoader";
 import Spinner from "../Spinner/Spinner";
@@ -16,7 +15,8 @@ const Portfolio = () => {
   const [category, setCategory] = useState("all");
   const [activeCategory, setActiveCategory] = useState("all");
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [isDropdown, setDropdown] = useState(false);
+  const [isDropdown, setDropdown] = useState(false);  
+  //const[msg,setMsg] = useState(false);
 
   const isActive = (category) => {
     return category === activeCategory ? "active" : "";
@@ -32,7 +32,6 @@ const Portfolio = () => {
 
   const handleImageClick = (item) => {
     setSelectedImage(item);
-    console.log(item);
   };
 
   const handleDialogClose = () => {
@@ -54,7 +53,7 @@ const Portfolio = () => {
   const toggleDropdownPlastic = () => {
     setDropdown(!isDropdown);
   };
-
+  
   return (
     <>
       {loading ? (
@@ -103,14 +102,6 @@ const Portfolio = () => {
                   </button>
                 </div>
 
-                {/* <button
-                value="plastic"
-                onClick={handleCategory}
-                className={isActive("plastic")}
-              >
-                PLASTIC
-              </button> */}
-
                 <div className="dropdown">
                   <button
                     className={isActive("plastic")}
@@ -148,12 +139,11 @@ const Portfolio = () => {
                       >
                         TOY
                       </button>
-                      {/* Add more buttons as needed */}
                     </div>
                   )}
                 </div>
 
-                <div className="dropdown">
+                <div className="dropdown" style={{ flexDirection: "column" }}>
                   <button
                     className={isActive("WOODfURNITURE")}
                     onClick={toggleDropdown}
@@ -188,22 +178,11 @@ const Portfolio = () => {
                         className={isActive("INDUSTRIAL FURNITURE")}
                         style={{ fontSize: "10px" }}
                       >
-                        INDUSTRIAL FURNITURES
+                        INDUSTRIAL FURNITURE
                       </button>
-                      {/* Add more buttons as needed */}
                     </div>
                   )}
                 </div>
-
-                {/* <div className="dropdown">
-                  <button
-                    // value="office furniture"
-                    onClick={handleCategory}
-                    className={isActive("office")}
-                  >
-                    OFFICE
-                  </button>
-                </div> */}
               </div>
             </Col>
 
@@ -215,14 +194,20 @@ const Portfolio = () => {
                   .filter((item) => {
                     if (category === "all") {
                       return true;
-                    } else {
+                    } 
+                    // else if(item.category !== category){
+                    //  {(<h1>products are coming...</h1>)}
+               
+                    // }
+                    else {
                       return item.category === category;
                     }
                   })
 
                   .map((item) => (
-                    // data-aos='zoom-in'
-                    <div className="portfolio-item" key={item.id}>
+                    <div
+                      className="portfolio-item"
+                      key={item.id}>
                       <img
                         className="portfolio-item-img"
                         src={item.imgSrc}
@@ -230,7 +215,8 @@ const Portfolio = () => {
                         style={{ cursor: "pointer" }}
                         onClick={() => handleImageClick(item.imgSrc)}
                       />
-                      <div style={{ marginTop: "12px", width: "100%" }}>
+
+                      <div style={{ marginTop: "12px", width:"100%" }}>
                         {item.title && (
                           <p className="itemTitle">
                             <strong>Name : </strong>
@@ -241,13 +227,23 @@ const Portfolio = () => {
                           </p>
                         )}
 
+                        {item.title2 && (
+                          <p className="itemCode">
+                            <strong style={{fontWeight:"800"}}>Name : </strong>
+                            <span style={{ textTransform: "uppercase" }}>
+                              {" "}
+                              {item.title2}
+                            </span>
+                          </p>
+                        )}
+
                         {item.size && (
                           <p className="itemTitle">
                             <strong>Size : </strong>
                             <span className="itemSize"> {item.size} </span>
                           </p>
                         )}
-
+                      
                         {item.size2 && (
                           <p className="itemTitle">
                             <strong>Size : </strong>
@@ -265,9 +261,11 @@ const Portfolio = () => {
                         )}
 
                         {item.code2 && (
-                          <p className="code2">
-                            <strong>Code : </strong>
-                            {item.code2}
+                          <p className="itemCode">
+                             <strong style={{fontWeight:"800"}}>Code : </strong>
+                             {/*  <span style={{ fontSize: "8px", display: "inline-block", overflow:"hidden"}}> */}
+                              {item.code2}
+                      
                           </p>
                         )}
 
@@ -280,6 +278,7 @@ const Portfolio = () => {
                                     style={{
                                       fontSize: "10px",
                                       fontWeight: "800",
+                                      width: "20px"
                                     }}
                                     scope="row"
                                   >
@@ -290,6 +289,8 @@ const Portfolio = () => {
                                       style={{
                                         fontSize: "8px",
                                         textAlign: "center",
+                                        margin:"0",
+                                        padding:"5px 0 0 0"
                                       }}
                                       key={index}
                                     >
@@ -302,6 +303,7 @@ const Portfolio = () => {
                                     style={{
                                       fontSize: "10px",
                                       fontWeight: "800",
+                                      width: "20px"
                                     }}
                                     scope="row"
                                   >
@@ -310,8 +312,48 @@ const Portfolio = () => {
                                   {item.color.split("/").map((color, index) => (
                                     <td
                                       style={{
-                                        fontSize: "8px",
+                                        //fontSize: "8px",
                                         backgroundColor: color,
+                                        cursor: "pointer",
+                                        width: "5px"
+                                      }}
+                                      key={index}
+                                    ></td>
+                                  ))}
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        ) : 
+
+                        item.code ? (
+                          <p className="itemTitle">                           
+                            <strong>Code : </strong>
+                            {item.code}</p>
+                        ) : (
+                          ""
+                        )}  
+
+                         {/* {item.color2 && (
+                          <div className="table-responsive">
+                            <table className="table table-bordered table-sm custom-table">
+                              <tbody>
+                                <tr>
+                                  <th
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "800",
+                                      width: "10px"
+                                    }}
+                                    scope="row"
+                                  >
+                                    Color
+                                  </th>
+                                  {item.color2.split("/").map((color2, index) => (
+                                    <td
+                                      style={{
+                                        fontSize: "8px",
+                                        backgroundColor: color2,
                                         cursor: "pointer",
                                       }}
                                       key={index}
@@ -321,25 +363,23 @@ const Portfolio = () => {
                               </tbody>
                             </table>
                           </div>
-                        ) : (
-                          <p className="itemTitle">
-                            <strong>Code : </strong>
-                            {item.code}
-                          </p>
-                        )}
+                         )} */}
+
                       </div>
                     </div>
                   ))}
               </div>
             )}
 
-            <Dialog open={Boolean(selectedImage)} onClose={handleDialogClose}>
+                                    {/* Image in big Size       */}
+
+          <Dialog open={Boolean(selectedImage)} onClose={handleDialogClose}>
               <DialogContent>
                 <IconButton
                   sx={{ position: "absolute", top: 0, right: 0 }}
                   onClick={handleDialogClose}
                 >
-                  <CloseIcon />
+                <CloseIcon />
                 </IconButton>
                 <img
                   className="zoomImage"
@@ -352,6 +392,9 @@ const Portfolio = () => {
                 />
               </DialogContent>
             </Dialog>
+
+
+
           </Row>
         </Container>
       )}

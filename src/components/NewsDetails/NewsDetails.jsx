@@ -19,7 +19,7 @@ const NewsDetails = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: false,
@@ -29,7 +29,7 @@ const NewsDetails = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
           swipeToSlide: true,
           infinite: true,
           dots: true,
@@ -84,12 +84,12 @@ const NewsDetails = () => {
                 <Card.Img className="newsCardImg" variant="top" src={item.imageSrc} />
                 <Card.Body>
                 <h2 className="newsCardTitle">{item.title}</h2>
-                  <p className="newsHeader" style={{ fontSize: "14px" }}>
+                  <p className="newsHeader" style={{ fontSize: "14px", color: "#17a2b8" }}>
                     {" "}
                     <AiOutlineCalendar
-                      style={{ fontSize: "20px", color: "#17a2b8" }}
+                      style={{ fontSize: "20px", color: "#17a2b8",marginBottom:"3px" }}
                     />{" "}
-                    <span className="newsHeader">{item.date}</span>{" "}
+                    <span style={{marginTop:"20px"}}>{item.date}</span>{" "}
                   </p>
                   
                   <p
@@ -125,7 +125,7 @@ const newsItems = [
     imageSrc: news2,
     title:
       "Talukder Group of Industries recently held a meeting to encourage collaboration and open communication with our employees.",
-    date: "April 05, 2021",
+    date: "July 05, 2020",
     description:
       "Throughout the meeting, we encouraged open and honest communication among all participants.",
   },
@@ -143,7 +143,7 @@ const newsItems = [
     imageSrc: news4,
     title:
       "Talukder Group of Industries recently organized an event to celebrate the achievements of our company.",
-    date: "December 26, 2022",
+    date: "April 18, 2022",
     description:
       "The event was held at a prestigious venue and was attended by senior executives, department heads, and representatives.",
   },

@@ -56,14 +56,11 @@ const Advertisement = () => {
     }, 2600);
   }, []);
 
-
   return (
     <>
   {loading ? (
         <Spinner />
       ) : 
-
-
       <Container>
         <Row data-aos="fade-down"
      data-aos-anchor="#example-anchor"
@@ -189,7 +186,7 @@ const Advertisement = () => {
               </Card.Body>
             </Card>
           </Col>
-
+             
           <Col lg={4} md={6} sm={12}>
             <Card className="serviceCard">
               <video

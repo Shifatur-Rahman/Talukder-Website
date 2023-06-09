@@ -6,28 +6,32 @@ import achievement2Img from "../../asset/images/achievements/02.jpg";
 import achievement3Img from "../../asset/images/achievements/03.jpg";
 import achievement4Img from "../../asset/images/achievements/04.jpg";
 import achievement5Img from "../../asset/images/achievements/05.jpg";
-import awards1Img from "../../asset/images/achievements/awards1.png";
-import awards2Img from "../../asset/images/achievements/awards2.png";
-import awards3Img from "../../asset/images/achievements/awards3.png";
-import awards4Img from "../../asset/images/achievements/awards4.png";
-import awards5Img from "../../asset/images/achievements/awards5.png";
-import awards6Img from "../../asset/images/achievements/awards6.png";
-import awards7Img from "../../asset/images/achievements/awards7.png";
-import awards8Img from "../../asset/images/achievements/awards8.png";
-import awards9Img from "../../asset/images/achievements/awards9.png";
-import awards10Img from "../../asset/images/achievements/awards10.png";
-import awards11Img from "../../asset/images/achievements/awards11.png";
-import awards12Img from "../../asset/images/achievements/awards12.png";
-import awards13Img from "../../asset/images/achievements/awards13.png";
-import awards14Img from "../../asset/images/achievements/awards14.png";
-import awards15Img from "../../asset/images/achievements/awards15.png";
-import awards16Img from "../../asset/images/achievements/awards16.png";
+import awards1Img from "../../asset/images/achievements/awards1.jpg";
+import awards2Img from "../../asset/images/achievements/awards2.jpg";
+import awards3Img from "../../asset/images/achievements/awards3.jpg";
+import awards4Img from "../../asset/images/achievements/awards4.jpg";
+import awards5Img from "../../asset/images/achievements/awards5.jpg";
+import awards6Img from "../../asset/images/achievements/awards6.jpg";
+import awards7Img from "../../asset/images/achievements/awards7.jpg";
+import awards8Img from "../../asset/images/achievements/awards8.jpg";
+import awards9Img from "../../asset/images/achievements/awards9.jpg";
+import awards10Img from "../../asset/images/achievements/awards10.jpg";
+import awards11Img from "../../asset/images/achievements/awards11.jpg";
+import awards12Img from "../../asset/images/achievements/awards12.jpg";
+import awards13Img from "../../asset/images/achievements/awards13.jpg";
+import awards14Img from "../../asset/images/achievements/awards14.jpg";
+import awards15Img from "../../asset/images/achievements/awards15.jpg";
+import awards16Img from "../../asset/images/achievements/awards16.jpg";
 //import awards17Img from "../../asset/images/achievements/awards17.png";
-import awards18Img from "../../asset/images/achievements/awards18.png";
-import awards19Img from "../../asset/images/achievements/awards19.png";
-import awards20Img from "../../asset/images/achievements/awards20.png";
+import awards18Img from "../../asset/images/achievements/awards18.jpg";
+import awards19Img from "../../asset/images/achievements/awards19.jpg";
+import awards20Img from "../../asset/images/achievements/awards20.jpg";
+import awards21Img from "../../asset/images/achievements/awards21.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 import Spinner from "../Spinner/Spinner";
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Achievement = () => {
   const [loading, setLoading] = useState(true);
@@ -35,7 +39,7 @@ const Achievement = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2600);
+    }, 2500);
   }, []);
   return (
     <>
@@ -88,254 +92,21 @@ const Achievement = () => {
             </ul>
           </div>
         </Row>
-
-        <Row>
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={achievement1Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={achievement2Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={achievement3Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={achievement4Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={achievement5Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards1Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards2Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards3Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards4Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards5Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards6Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards7Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards8Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards9Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards10Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards11Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards12Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards13Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards14Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards15Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards16Img}
-              />
-            </Card>
-          </Col>
-
-          {/* <Col lg={3} md={4} sm={6}>
-              <Card className="ManagementCard">
-                <Card.Img className='achievementCardImg' variant="top" src={awards17Img} />
-              </Card>
- </Col> */}
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards18Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards19Img}
-              />
-            </Card>
-          </Col>
-
-          <Col lg={3} md={4} sm={6}>
-            <Card className="ManagementCard">
-              <Card.Img
-                className="achievementCardImg"
-                variant="top"
-                src={awards20Img}
-              />
-            </Card>
-          </Col>
+<Row>
+{achievementImg.map((item) => (
+      <Col key={item.title} lg={3} md={4} sm={6}>
+        <Card className="ManagementCard">
+          <LazyLoadImage
+            className="achievementCardImg"
+            variant="top"
+            src={item.img}
+            alt={item.title}
+          />
+        </Card>
+      </Col>
+    ))}
         </Row>
+
       </Container>
 }
     </>
@@ -343,3 +114,84 @@ const Achievement = () => {
 };
 
 export default Achievement;
+
+const achievementImg = [
+  {
+    img: achievement1Img,
+  },
+  {
+    img: achievement2Img,
+  },
+  {
+    img: achievement3Img,
+  },
+  {
+    img: achievement4Img,
+  },
+  {
+    img: achievement5Img,
+  },
+  {
+    img: awards1Img
+  },
+  {
+    img: awards2Img
+  },
+  {
+    img: awards3Img
+  },
+  {
+    img: awards4Img
+  },
+  {
+    img: awards5Img
+  },
+  {
+    img: awards6Img
+  },
+  {
+    img: awards7Img
+  },
+  {
+    img: awards8Img
+  },
+  {
+    img: awards9Img
+  },
+  {
+    img: awards10Img
+  },
+  {
+    img: awards11Img
+  },
+  {
+    img: awards12Img
+  },
+  {
+    img: awards13Img
+  },
+  {
+    img: awards14Img
+  },
+  {
+    img: awards15Img
+  },
+  {
+    img: awards16Img
+  },
+  // {
+  //   img: awards17Img
+  // },
+  {
+    img: awards18Img
+  },
+  {
+    img: awards19Img
+  },
+  {
+    img: awards20Img
+  },
+  {
+    img: awards21Img
+  },
+]

@@ -3,9 +3,8 @@
   -o-transition: background-color 400ms linear;
   -moz-transition: background-color 400ms linear;
   -webkit-transition: background-color 400ms linear;
-  /* background-color: rgba(0, 0, 0, 0.1); */
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .navigationScroll {
@@ -13,26 +12,23 @@
   -o-transition: background-color 400ms linear;
   -moz-transition: background-color 400ms linear;
   -webkit-transition: background-color 400ms linear;
-  /* background-color: #f6fff8; */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem 3rem;
 }
 
 .navItem {
+  font-family: "Roboto Condensed", sans-serif;
   text-decoration: none !important;
-  /* font-family: "Raleway", sans-serif; */
   font-size: 15px !important;
   font-weight: 500;
   margin-right: 1rem;
   color: #2e4f4f;
-  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 0.3px;
 }
 
 .navItemScroll {
-  text-decoration: none !important;
-  /* font-family: "Raleway", sans-serif; */
   font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none !important;
   font-size: 14px !important;
   font-weight: 500;
   margin-right: 1rem;
@@ -48,7 +44,6 @@
 .navItemScroll:hover {
   color: #148c9f !important;
   transition: all ease 1s !important;
-  /* font-weight: 600; */
 }
 
 .logo {
@@ -83,34 +78,6 @@
   transition-property: background-color;
   transition-duration: 2s;
 }
-
-
-/* svg{
-  stroke: currentcolor;
-  fill: currentcolor;
-  stroke-width: 0;
-  height: 1em;
-  width: 1em;
-}
-
-.navItem:hover svg {
-  transform: rotate(180deg);
-  transition: all ease 500ms;
-} */
-
-
-/* .navItem:hover svg {
-  transform: rotate(180deg);
-  transition: all ease 1s;
-}
-
-.dropdown-content:hover svg{
-  transform: rotate(180deg);
-  transition: all ease 1s;
-} */
-
-
-
 
 .navDropdown:hover {
   background-color: transparent;
@@ -168,6 +135,7 @@
   button.navbar-toggler {
     background-color: #17a2b8;
     border: none;
+    display: block;
   }
 
   /* button.navbar-toggler,   span.navbar-toggler-icon */

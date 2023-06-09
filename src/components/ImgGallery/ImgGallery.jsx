@@ -25,6 +25,8 @@ import gallery17 from "../../asset/images/gallery/gallery17.jpg";
 import gallery18 from "../../asset/images/gallery/gallery18.jpg";
 import "./ImgGallery.css";
 import Spinner from "../Spinner/Spinner.jsx";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ImgGallery = () => {
   const [selectedImage, setSelectedImage] = React.useState(null);
@@ -49,8 +51,6 @@ const ImgGallery = () => {
         <Spinner />
       ) : (
         <Container style={{ marginTop: "5rem" }}>
-          {/* <h2 className="mainTitle">Recent and Upcoming Events</h2> */}
-
           <ImageList
             className="ImageGallery"
             sx={{ width: "100%", height: "auto", overflow: "hidden" }}
@@ -59,15 +59,11 @@ const ImgGallery = () => {
             gap={6}
           >
             {itemData.map((item) => (
-              <ImageListItem onClick={() => handleImageClick(item)}>
+              <ImageListItem key={item.id} onClick={() => handleImageClick(item)}>
                 <div
-                  // data-aos="fade-down"
-                  // data-aos-anchor="#example-anchor"
-                  // data-aos-offset="500"
-                  // data-aos-duration="500"
                   className="galleryImg"
                 >
-                  <img
+                  <LazyLoadImage
                     src={`${item.img}?w=161&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -106,68 +102,84 @@ export default ImgGallery;
 
 const itemData = [
   {
+    id:1,
     img: gallery1,
     title: "Dhaka International Trade Fair",
   },
 
   {
+    id:2,
     img: gallery4,
     title: "Customers Visit Our Showroom ",
   },
   {
+    id:3,
     img: gallery14,
     title: "Customer Satisfiction",
   },
   {
+    id:4,
     img: gallery9,
     title: "Talukder Plastic",
   },
   {
+    id:5,
     img: gallery5,
     title: "uPVC Factory",
   },
   {
+    id:6,
     img: gallery6,
     title: "Factory",
   },
   {
+    id:7,
     img: gallery7,
     title: "Our Production",
   },
   {
+    id:8,
     img: gallery8,
     title: "Goods are ready",
   },
 
   {
+    id:9,
     img: gallery10,
     title: "Storage",
   },
   {
+    id:10,
     img: gallery17,
     title: "Machine",
   },
   {
+    id:11,
     img: gallery11,
     title: "uPVC Machine",
   },
   {
+    id:12,
     img: gallery12,
     title: "uPVC Factory",
   },
   {
+    id:13,
     img: gallery13,
     title: "Raw Materials",
   },
   {
+    id:14,
     img: gallery16,
     title: "Jashore Depot",
   },
   {
+    id:15,
     img: gallery15,
     title: "Our Goods",
   },
   {
+    id:16,
     img: gallery18,
     title: "Our Benches",
   },
