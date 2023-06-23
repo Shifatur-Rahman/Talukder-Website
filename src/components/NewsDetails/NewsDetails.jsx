@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./NewsDetails.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Container, Card } from "react-bootstrap";
 import news1 from "../../asset/images/news/news1.jpg";
 import news2 from "../../asset/images/news/news2.jpg";
 import news3 from "../../asset/images/news/news3.jpg";
 import news4 from "../../asset/images/news/news4.jpg";
 import news5 from "../../asset/images/news/news5.jpg";
+import news6 from "../../asset/images/news/news6.jpg";
 import { AiOutlineCalendar } from "react-icons/ai";
-// import AOS from "aos";
 import "aos/dist/aos.css";
 
 const NewsDetails = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
@@ -75,7 +75,8 @@ const NewsDetails = () => {
         <h1 className="knowusTitle">Recent News & Events</h1>
         <Slider {...settings}>
           {newsItems.map((item, index) => (
-            <Col sm={12} md={6} lg={4} key={item.id}>
+            <Col className="" sm={12} md={6} lg={4} key={item.id}>
+              <div className="news">
               <Card
                 className={`newsCard ${
                   index === newsItems.length - 1 ? "lastCard" : ""
@@ -84,22 +85,24 @@ const NewsDetails = () => {
                 <Card.Img className="newsCardImg" variant="top" src={item.imageSrc} />
                 <Card.Body>
                 <h2 className="newsCardTitle">{item.title}</h2>
+
                   <p className="newsHeader" style={{ fontSize: "14px", color: "#17a2b8" }}>
                     {" "}
-                    <AiOutlineCalendar
-                      style={{ fontSize: "20px", color: "#17a2b8",marginBottom:"3px" }}
+                    <AiOutlineCalendar className="newsHeaderIcon"
+                      // style={{ fontSize: "20px", color: "#17a2b8",marginBottom:"3px" }}
                     />{" "}
-                    <span style={{marginTop:"20px"}}>{item.date}</span>{" "}
+                    <span className="newsHeaderSpan">{item.date}</span>{" "}
                   </p>
                   
                   <p
                     className="newsPara"
-                    style={{ textAlign: "justify", fontSize: "14px" }}
+                    style={{ textAlign: "justify", fontSize: "12px" }}
                   >
                     {item.description}
                   </p>
                 </Card.Body>
               </Card>
+              </div>
             </Col>
           ))}
         </Slider>
@@ -125,7 +128,7 @@ const newsItems = [
     imageSrc: news2,
     title:
       "Talukder Group of Industries recently held a meeting to encourage collaboration and open communication with our employees.",
-    date: "July 05, 2020",
+    date: "January 05, 2023",
     description:
       "Throughout the meeting, we encouraged open and honest communication among all participants.",
   },
@@ -152,8 +155,18 @@ const newsItems = [
     imageSrc: news5,
     title:
       "The meeting was aimed at improving communication and collaboration between management and employees.",
-    date: "December 26, 2022",
+    date: "May 13, 2023",
     description:
       "The employees were given the opportunity to ask questions and provide feedback on various aspects of their work, including working conditions, benefits, and opportunities for career growth and development.",
   },
+  {
+    id: 6,
+    imageSrc: news6,
+    title:
+      "Talukder Group of Industries recently organized an event to celebrate the achievements of our company.",
+      date: "May 13, 2023",
+    description:
+      "Throughout the meeting, we encouraged open and honest communication among all participants.",
+  },
 ];
+

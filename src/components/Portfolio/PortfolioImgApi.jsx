@@ -46,7 +46,7 @@ import tbl45 from "../../asset/images/office furniture/tbl45.jpg";
 import tbl46 from "../../asset/images/office furniture/tbl46.jpg";
 import tbl47 from "../../asset/images/office furniture/tbl47.jpg";
 import tbl48 from "../../asset/images/office furniture/tbl48.jpg";
-import tbl49 from "../../asset/images/office furniture/tbl49.jpg"
+import tbl49 from "../../asset/images/office furniture/tbl49.jpg";
 import tbl50 from "../../asset/images/office furniture/tbl50.jpg";
 import tbl51 from "../../asset/images/office furniture/tbl51.jpg";
 import tbl52 from "../../asset/images/office furniture/tbl52.jpg";
@@ -89,7 +89,6 @@ import con_table5 from "../../asset/images/Chair/conference table/conferenceTabl
 import con_table6 from "../../asset/images/Chair/conference table/conferenceTable06.jpg";
 import con_table7 from "../../asset/images/Chair/conference table/conferenceTable07.jpg";
 import con_table8 from "../../asset/images/Chair/conference table/conferenceTable08.jpg";
-
 
 // Chair Image
 import chair1 from "../../asset/images/Chair/01.jpg";
@@ -159,7 +158,7 @@ import chair64 from "../../asset/images/Chair/64.jpg";
 import chair65 from "../../asset/images/Chair/65.jpg";
 import chair66 from "../../asset/images/Chair/66.jpg";
 import chair67 from "../../asset/images/Chair/67.jpg";
-// import chair68 from "../../asset/images/Chair/68.jpg";
+import chair68 from "../../asset/images/Chair/68.jpg";
 import chair69 from "../../asset/images/Chair/69.jpg";
 import chair70 from "../../asset/images/Chair/70.jpg";
 import chair71 from "../../asset/images/Chair/71.jpg";
@@ -193,7 +192,6 @@ import chair93 from "../../asset/images/Chair/93.jpg";
 import chair94 from "../../asset/images/Chair/94.jpg";
 import chair95 from "../../asset/images/Chair/95.jpg";
 import chair96 from "../../asset/images/Chair/96.jpg";
-
 
 // Plastic image
 
@@ -251,20 +249,20 @@ import plastic51 from "../../asset/images/plastic/plastic51.png";
 import plastic52 from "../../asset/images/plastic/plastic52.png";
 import plastic53 from "../../asset/images/plastic/plastic53.png";
 // import plastic54 from "../../asset/images/plastic/plastic54.png"
-import plastic55 from "../../asset/images/Corporate plastic/plastic55.png";
+// import plastic55 from "../../asset/images/Corporate plastic/plastic55.png";
 import plastic56 from "../../asset/images/Corporate plastic/plastic56.png";
 import plastic57 from "../../asset/images/plastic/plastic57.png";
 // import plastic58 from "../../asset/images/plastic/plastic58.png"
-import plastic59 from "../../asset/images/Corporate plastic/plastic59.png";
-import plastic60 from "../../asset/images/plastic/plastic60.png";
-import plastic61 from "../../asset/images/plastic/plastic61.png";
+// import plastic59 from "../../asset/images/Corporate plastic/plastic59.png";
+// import plastic60 from "../../asset/images/plastic/plastic60.png";
+// import plastic61 from "../../asset/images/plastic/plastic61.png";
 import plastic62 from "../../asset/images/plastic/plastic62.png";
 import plastic63 from "../../asset/images/plastic/plastic63.png";
 import plastic64 from "../../asset/images/plastic/plastic64.png";
 import plastic65 from "../../asset/images/plastic/plastic65.png";
 import plastic66 from "../../asset/images/plastic/plastic66.png";
 import plastic67 from "../../asset/images/plastic/plastic67.png";
-import plastic68 from "../../asset/images/plastic/plastic68.png";
+// import plastic68 from "../../asset/images/plastic/plastic68.png";
 import plastic69 from "../../asset/images/plastic/plastic69.png";
 import plastic70 from "../../asset/images/plastic/plastic70.png";
 import plastic71 from "../../asset/images/plastic/plastic71.png";
@@ -326,8 +324,8 @@ import upvc2 from "../../asset/images/upvc/upvc2.JPG";
 import upvc3 from "../../asset/images/upvc/upvc3.JPG";
 import upvc4 from "../../asset/images/upvc/upvc4.JPG";
 import upvc5 from "../../asset/images/upvc/upvc5.JPG";
-import upvc6 from "../../asset/images/upvc/upvc6.JPG"
-import upvc7 from "../../asset/images/upvc/upvc7.JPG";
+import upvc6 from "../../asset/images/upvc/upvc6.JPG";
+// import upvc7 from "../../asset/images/upvc/upvc7.JPG";
 import upvc8 from "../../asset/images/upvc/upvc8.JPG";
 import upvc9 from "../../asset/images/upvc/upvc9.JPG";
 import upvc10 from "../../asset/images/upvc/upvc10.JPG";
@@ -1567,9 +1565,16 @@ const portfolioItems = [
     size: "L1500 X W450 X H750MM(HIGH BENCH)",
     size2: "L1500 X W300 X H400MM(LOW BENCH)",
   },
-  // {
-  //   //68 already done
-  // }
+
+  {
+    id: 568,
+    title: "TEACHERS TABLE",
+    category: "lged",
+    code: "TFTTS-068",
+    imgSrc: chair68,
+    size: "L850 X W540 X H780MM",
+  },
+
   {
     id: 569,
     title: "TEACHERS TABLE",
@@ -1617,7 +1622,7 @@ const portfolioItems = [
     id: 574,
     title: "FILE CABINET",
     category: "lged",
-    code : "TFSFC-073",
+    code: "TFSFC-073",
     imgSrc: chair73,
     size: "L482 X W550 X H1370MM",
   },
@@ -1627,7 +1632,7 @@ const portfolioItems = [
   {
     id: 575,
     title: "COMBINED CABINET",
-    category: "lged",
+    category: "office furniture",
     code: "TFSCC-074",
     imgSrc: chair74,
     size: "L900 X W550 X H1200MM",
@@ -2019,7 +2024,7 @@ const portfolioItems = [
     title: "SPOUT BUCKET",
     size: "16/20 Ltr.",
     code: "11350/11351/11356/11357",
-    color: "	 #0033cc/#cc00cc/#0033cc/#cc00cc"
+    color: "	 #0033cc/#cc00cc/#0033cc/#cc00cc",
   },
   {
     id: 122,
@@ -2028,7 +2033,7 @@ const portfolioItems = [
     title: "SPOUT BUCKET",
     size: "16/20 Ltr.",
     code: "11350/11351/11356/11357",
-    color: "#0033cc/#cc00cc/#0033cc/#cc00cc"
+    color: "#0033cc/#cc00cc/#0033cc/#cc00cc",
   },
   {
     id: 207,
@@ -2096,7 +2101,7 @@ const portfolioItems = [
     sameColor: "RED",
     size: "4,8,12,15,18,20,22,25,30 Ltr.",
   },
-  
+
   {
     id: 195,
     category: "PLASTIC HOUSEHOLD",
@@ -2127,7 +2132,7 @@ const portfolioItems = [
     size: "16, 20 Ltr.",
   },
 
-  ///                                BUCKET END      
+  ///                                BUCKET END
 
   {
     id: 123,
@@ -2436,7 +2441,8 @@ const portfolioItems = [
     category: "PLASTIC HOUSEHOLD",
     imgSrc: plastic66,
     title: "DELUX BOWL",
-    color: "RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue",
+    color:
+      "RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue",
     code: "12165/12168/12171/12175/12180/12185/12188/12191/12195/12166/12169/12172/12176/12181/12186/12189/12192/12196",
     size: "3,5,8,10,15,20,25,30,35 Ltr.",
   },
@@ -2787,45 +2793,6 @@ const portfolioItems = [
     imgSrc: lged1,
   },
 
-  // {
-  //   id: 202,
-  //   category: "lged",
-  //   imgSrc: lged2,
-  // },
-
-  // {
-  //   id: 203,
-  //   category: "lged",
-  //   imgSrc: lged3,
-  // },
-
-  // {
-  //   id: 204,
-  //   category: "lged",
-  //   imgSrc: lged4,
-  // },
-
-  // {
-  //   id: 205,
-  //   category: "lged",
-  //   imgSrc: lged5,
-  // },
-
-  // {
-  //   id: 206,
-  //   category: "lged",
-  //   imgSrc: lged6,
-  // },
-
-  // {
-  //   id: 31,
-  //   title: "EXECUTIVE TABLE",
-  //   category: "office furniture",
-  //   code : "TFETO-031",
-  //   size: "L1350 X W600 X H750mm",
-  //   imgSrc: tbl31,
-  // },
-
   {
     id: 254,
     title: "Teacher Table",
@@ -2845,49 +2812,63 @@ const portfolioItems = [
     category: "lged",
     imgSrc: lged11,
   },
-
-   //   ///                                            upvc
+  //   ///       //                                      upvc
   {
     id: 301,
     category: "upvc",
     title: "110mm Fittings",
     imgSrc: upvc1,
-    code2: "33490,33450,33451,33491,33492,33493,33400,33401,33402,33403,33405,33406,33408,33409,33411,33412,33413,33414"
+    button: "Details",
+    longCode:
+      "33490/33450/33451/33491/33492/33493/33400/33401/33402/33403/33405/33406/33408/33409/33411/33412/33413/33414",
+    longSize: '4" Plain Bend 90 FF/4" Plain Bend 45 FF/4" Plain Bend 45 MF',
   },
   {
     id: 302,
     category: "upvc",
+    title: "Soap case",
     imgSrc: upvc2,
-    code2: "34280,34281",
-    title: "Soap case"
+    button: "Details",
+    longCode: "34280/34281",
+    color: "white/pink",
   },
   {
     id: 303,
     category: "upvc",
     imgSrc: upvc3,
-    code2: "31019,31020,31022,31023,31025,31026,31028,31029,31031,31032,31034,31035",
-    title: "Thread Pipe9"
+    title: "Thread Pipe",
+    button: "Details",
+    longCode:
+      "31019/31020/31022/31023/31025/31026/31028/31029/31031/31032/31034/31035",
+    longSize: `0.5"X10' Thread Pipe/0.5"X10' Thread Pipe/0.5"X10' Thread Pipe/0.5"X10' Thread Pipe `,
+    longColor:
+      "gray/green/gray/green/gray/green/gray/green/gray/green/gray/green",
+    longThickness:
+      "3.1~3.4/3.1~3.4/3.2~3.5/3.8~4.2/3.8~4.2/4.2~4.5/4.2~4.5/4.0~4.4/4.0~4.4/4.4~4.8/4.4~4.8",
   },
   {
     id: 304,
     category: "upvc",
     imgSrc: upvc16,
-    title: "iso standard swr pipe",
-    code2: "34100,34101,34111,34112,34121,34122,34151,34152,34161,34162,34171,34172,34181,34182,34186,34187,34191,34192,34200,34201,34221,34222,34231,34232"
+    title: "Iso standard swr pipe",
+    button: "Details",
+    // code2: "34100,34101,34111,34112,34121,34122,34151,34152,34161,34162,34171,34172,34181,34182,34186,34187,34191,34192,34200,34201,34221,34222,34231,34232"
   },
   {
     id: 305,
     category: "upvc",
     imgSrc: upvc5,
     title: "Class pipe(continue)",
-    code2: "31810,31815,32100,32105,32120,32125,32126,32140,32145,32160,32165,32180,32185"
+    // code2: "31810,31815,32100,32105,32120,32125,32126,32140,32145,32160,32165,32180,32185"
+    button: "Details",
   },
   {
     id: 306,
     category: "upvc",
     imgSrc: upvc6,
-    title:"Class Pipe",
-    code2:"31150,31151,31201,31205,31301,31305,31310,31315,31320,31401,31405,31415,31501,31505,31507,31605,31610,31615,31620,31801,31805"
+    title: "Class Pipe",
+    button: "Details",
+    // code2:"31150,31151,31201,31205,31301,31305,31310,31315,31320,31401,31405,31415,31501,31505,31507,31605,31610,31615,31620,31801,31805"
   },
   //      code is not available
   // {
@@ -2900,65 +2881,73 @@ const portfolioItems = [
     id: 308,
     category: "upvc",
     imgSrc: upvc8,
-    code2: "30216,30305,30300,30420,30425,30426,30430,30435,30510,30620",
-    title: "Pipe cutting filter"
+    // code2: "30216,30305,30300,30420,30425,30426,30430,30435,30510,30620",
+    title: "Pipe cutting filter",
+    button: "Details",
   },
   {
     id: 309,
     category: "upvc",
     imgSrc: upvc9,
-    code2: "36340,36341,36452,36453,36455,36456,36458,36459,36540,31425,31426,31542,36823",
-    title: "gold series pipe"
+    // code2: "36340,36341,36452,36453,36455,36456,36458,36459,36540,31425,31426,31542,36823",
+    title: "gold series pipe",
+    button: "Details",
   },
   {
     id: 310,
     category: "upvc",
     imgSrc: upvc10,
-    code2:"37315,37316,37432,37433,37436,37437,37509,30424",
-    title:"gold series filter"
+    // code2:"37315,37316,37432,37433,37436,37437,37509,30424",
+    title: "gold series filter",
+    button: "Details",
   },
   {
     id: 311,
     category: "upvc",
     imgSrc: upvc11,
-    code2:"30150,30155,30160,30165,30170,30175,30180,37150,37155,37160",
-    title2: "Small Dia rib & robo filter"
+    // code2:"30150,30155,30160,30165,30170,30175,30180,37150,37155,37160",
+    title: "Small Dia rib & robo filter",
+    button: "Details",
   },
   {
     id: 312,
     category: "upvc",
     imgSrc: upvc12,
-    code2: "30205,30210,30310,30315,30320,30325,30400,30405",
-    title2: "pipe cutting class filter(bigger dia)"
+    // code2: "30205,30210,30310,30315,30320,30325,30400,30405",
+    title: "pipe cutting class filter(bigger dia)",
+    button: "Details",
   },
   {
     id: 313,
     category: "upvc",
     imgSrc: upvc13,
-    title2: "pipe cutting class filter(continue)",
-    code2: "30410,30415,30500,30505,30508,30600,30605,30610,30615,30800,30801,30805,30806,30810,30815,30100,30103,30105,30106,30120,30125,30140,30145"
+    title: "pipe cutting class filter(continue)",
+    // code2: "30410,30415,30500,30505,30508,30600,30605,30610,30615,30800,30801,30805,30806,30810,30815,30100,30103,30105,30106,30120,30125,30140,30145",
+    button: "Details",
   },
   {
     id: 314,
     category: "upvc",
     imgSrc: upvc14,
     title: "standard pipe",
-    code2: "31156,31161,31165,31166,31167,31175,31215,31216,31325,31330,31331,31335,31336,31420,31510,31525,31350"
+    // code2: "31156,31161,31165,31166,31167,31175,31215,31216,31325,31330,31331,31335,31336,31420,31510,31525,31350",
+    button: "Details",
   },
   {
     id: 315,
     category: "upvc",
     imgSrc: upvc15,
     title: "Sanitary pipe",
-    code2: "34123,34124,34131,34132,34141,34142,34184,34185,34211,34212"
+    // code2: "34123,34124,34131,34132,34141,34142,34184,34185,34211,34212",
+    button: "Details",
   },
   {
     id: 316,
     category: "upvc",
     imgSrc: upvc4,
     title: "Tubewell",
-    code2: "83101,83102,83103,83105,83107,83109,83110,83141,83112,83114,83115,83117,83124,83125"
-  
+    // code2: "83101,83102,83103,83105,83107,83109,83110,83141,83112,83114,83115,83117,83124,83125"
+    button: "Details",
   },
 ];
 

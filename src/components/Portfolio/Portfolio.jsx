@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
 import portfolioItems from "./PortfolioImgApi";
 import { Container } from "@mui/material";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import IconButton from "@mui/material/IconButton";
@@ -10,12 +10,15 @@ import CloseIcon from "@mui/icons-material/Close";
 import "aos/dist/aos.css";
 import PageLoader from "../PageLoader/PageLoader";
 import Spinner from "../Spinner/Spinner";
+import { NavLink } from "react-router-dom";
+import UpvcModal1 from "../UpvcModal1/UpvcModal1";
+import Modal from "react-bootstrap/Modal";
 
 const Portfolio = () => {
   const [category, setCategory] = useState("all");
   const [activeCategory, setActiveCategory] = useState("all");
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [isDropdown, setDropdown] = useState(false);  
+  const [isDropdown, setDropdown] = useState(false);
   //const[msg,setMsg] = useState(false);
 
   const isActive = (category) => {
@@ -53,7 +56,17 @@ const Portfolio = () => {
   const toggleDropdownPlastic = () => {
     setDropdown(!isDropdown);
   };
-  
+
+  //  upvc modal 1
+  // const values = [true];
+  // const [fullscreen, setFullscreen] = useState(true);
+  // const [show, setShow] = useState(false);
+
+  // function handleShow(breakpoint) {
+  //   setFullscreen(breakpoint);
+  //   setShow(true);
+  // }
+
   return (
     <>
       {loading ? (
@@ -89,16 +102,6 @@ const Portfolio = () => {
                     className={isActive("upvc")}
                   >
                     UPVC
-                  </button>
-                </div>
-
-                <div className="dropdown">
-                  <button
-                    value="lged"
-                    onClick={handleCategory}
-                    className={isActive("lged")}
-                  >
-                    SCHOOL FURNITURE
                   </button>
                 </div>
 
@@ -141,6 +144,16 @@ const Portfolio = () => {
                       </button>
                     </div>
                   )}
+                </div>
+
+                <div className="dropdown">
+                  <button
+                    value="lged"
+                    onClick={handleCategory}
+                    className={isActive("lged")}
+                  >
+                    SCHOOL FURNITURE
+                  </button>
                 </div>
 
                 <div className="dropdown" style={{ flexDirection: "column" }}>
@@ -194,10 +207,10 @@ const Portfolio = () => {
                   .filter((item) => {
                     if (category === "all") {
                       return true;
-                    } 
+                    }
                     // else if(item.category !== category){
                     //  {(<h1>products are coming...</h1>)}
-               
+
                     // }
                     else {
                       return item.category === category;
@@ -205,9 +218,7 @@ const Portfolio = () => {
                   })
 
                   .map((item) => (
-                    <div
-                      className="portfolio-item"
-                      key={item.id}>
+                    <div className="portfolio-item" key={item.id}>
                       <img
                         className="portfolio-item-img"
                         src={item.imgSrc}
@@ -216,7 +227,7 @@ const Portfolio = () => {
                         onClick={() => handleImageClick(item.imgSrc)}
                       />
 
-                      <div style={{ marginTop: "12px", width:"100%" }}>
+                      <div style={{ marginTop: "15px", width: "100%" }}>
                         {item.title && (
                           <p className="itemTitle">
                             <strong>Name : </strong>
@@ -227,7 +238,97 @@ const Portfolio = () => {
                           </p>
                         )}
 
-                        {item.title2 && (
+                        {/* upvc pipe 1 */}
+
+                        {/* <NavLink className="knowMore" to="/upvc1"> */}
+                        {/* <Button className="upvcBtn" size="sm">Product description</Button> */}
+                        {/* <UpvcModal1 /> */}
+                        {/* </NavLink> */}
+                        {/* <NavLink className="knowMore" to="/upvc1">   </NavLink>  */}
+
+                        {item.button && (
+                          <div>
+                            <UpvcModal1
+                              title={item.title}
+                              category={item.category}
+                              code={item.longCode}
+                              size={item.size}
+                            />
+                          </div>
+                        )}
+
+                        {/* {(item.button && item.longCode && item.longSize) || item.longColor || item.longThickness && (   
+                             <div>
+                             <UpvcModal1 title={item.title} category={item.category}  />
+                            </div>
+                            )
+                            } */}
+
+                        {item.color && item.code ? (
+                          <div className="table-responsive">
+                            <table className="table table-bordered table-sm custom-table">
+                              <tbody>
+                                <tr>
+                                  <th
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "800",
+                                      width: "20px",
+                                    }}
+                                    scope="row"
+                                  >
+                                    Code
+                                  </th>
+                                  {item.code.split("/").map((code, index) => (
+                                    <td
+                                      style={{
+                                        fontSize: "8px",
+                                        textAlign: "center",
+                                        margin: "0",
+                                        padding: "5px 0 0 0",
+                                      }}
+                                      key={index}
+                                    >
+                                      {code}
+                                    </td>
+                                  ))}
+                                </tr>
+                                <tr>
+                                  <th
+                                    style={{
+                                      fontSize: "10px",
+                                      fontWeight: "800",
+                                      width: "20px",
+                                    }}
+                                    scope="row"
+                                  >
+                                    Color
+                                  </th>
+                                  {item.color.split("/").map((color, index) => (
+                                    <td
+                                      style={{
+                                        //fontSize: "8px",
+                                        backgroundColor: color,
+                                        cursor: "pointer",
+                                        width: "5px",
+                                      }}
+                                      key={index}
+                                    ></td>
+                                  ))}
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        ) : item.code ? (
+                          <p className="itemTitle">
+                            <strong>Code : </strong>
+                            {item.code}
+                          </p>
+                        ) : (
+                          ""
+                        )}
+
+                        {/* {item.title2 && (
                           <p className="itemCode">
                             <strong style={{fontWeight:"800"}}>Name : </strong>
                             <span style={{ textTransform: "uppercase" }}>
@@ -235,7 +336,7 @@ const Portfolio = () => {
                               {item.title2}
                             </span>
                           </p>
-                        )}
+                        )} */}
 
                         {item.size && (
                           <p className="itemTitle">
@@ -243,7 +344,7 @@ const Portfolio = () => {
                             <span className="itemSize"> {item.size} </span>
                           </p>
                         )}
-                      
+
                         {item.size2 && (
                           <p className="itemTitle">
                             <strong>Size : </strong>
@@ -260,126 +361,27 @@ const Portfolio = () => {
                           </p>
                         )}
 
-                        {item.code2 && (
+                        {/* {item.code2 && (
                           <p className="itemCode">
                              <strong style={{fontWeight:"800"}}>Code : </strong>
-                             {/*  <span style={{ fontSize: "8px", display: "inline-block", overflow:"hidden"}}> */}
                               {item.code2}
-                      
                           </p>
-                        )}
-
-                        {item.color && item.code ? (
-                          <div className="table-responsive">
-                            <table className="table table-bordered table-sm custom-table">
-                              <tbody>
-                                <tr>
-                                  <th
-                                    style={{
-                                      fontSize: "10px",
-                                      fontWeight: "800",
-                                      width: "20px"
-                                    }}
-                                    scope="row"
-                                  >
-                                    Code
-                                  </th>
-                                  {item.code.split("/").map((code, index) => (
-                                    <td
-                                      style={{
-                                        fontSize: "8px",
-                                        textAlign: "center",
-                                        margin:"0",
-                                        padding:"5px 0 0 0"
-                                      }}
-                                      key={index}
-                                    >
-                                      {code}
-                                    </td>
-                                  ))}
-                                </tr>
-                                <tr>
-                                  <th
-                                    style={{
-                                      fontSize: "10px",
-                                      fontWeight: "800",
-                                      width: "20px"
-                                    }}
-                                    scope="row"
-                                  >
-                                    Color
-                                  </th>
-                                  {item.color.split("/").map((color, index) => (
-                                    <td
-                                      style={{
-                                        //fontSize: "8px",
-                                        backgroundColor: color,
-                                        cursor: "pointer",
-                                        width: "5px"
-                                      }}
-                                      key={index}
-                                    ></td>
-                                  ))}
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        ) : 
-
-                        item.code ? (
-                          <p className="itemTitle">                           
-                            <strong>Code : </strong>
-                            {item.code}</p>
-                        ) : (
-                          ""
-                        )}  
-
-                         {/* {item.color2 && (
-                          <div className="table-responsive">
-                            <table className="table table-bordered table-sm custom-table">
-                              <tbody>
-                                <tr>
-                                  <th
-                                    style={{
-                                      fontSize: "10px",
-                                      fontWeight: "800",
-                                      width: "10px"
-                                    }}
-                                    scope="row"
-                                  >
-                                    Color
-                                  </th>
-                                  {item.color2.split("/").map((color2, index) => (
-                                    <td
-                                      style={{
-                                        fontSize: "8px",
-                                        backgroundColor: color2,
-                                        cursor: "pointer",
-                                      }}
-                                      key={index}
-                                    ></td>
-                                  ))}
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                         )} */}
-
+                        )} */}
                       </div>
                     </div>
                   ))}
               </div>
             )}
 
-                                    {/* Image in big Size       */}
+            {/* Image in big Size       */}
 
-          <Dialog open={Boolean(selectedImage)} onClose={handleDialogClose}>
+            <Dialog open={Boolean(selectedImage)} onClose={handleDialogClose}>
               <DialogContent>
                 <IconButton
                   sx={{ position: "absolute", top: 0, right: 0 }}
                   onClick={handleDialogClose}
                 >
-                <CloseIcon />
+                  <CloseIcon />
                 </IconButton>
                 <img
                   className="zoomImage"
@@ -392,9 +394,6 @@ const Portfolio = () => {
                 />
               </DialogContent>
             </Dialog>
-
-
-
           </Row>
         </Container>
       )}

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { Col, Container, Card } from "react-bootstrap";
 import Slider from "react-slick";
@@ -25,9 +25,7 @@ import client21 from "../../asset/images/Client_logo/hysawa.jpg";
 import client22 from "../../asset/images/Client_logo/csa.jpg";
 import Spinner from "../Spinner/Spinner.jsx";
 
-// class ClientReview extends Component {
 const ClientReview = () => {
-  // render() {
 
   const [loading, setLoading] = useState(true);
 
@@ -38,7 +36,6 @@ const ClientReview = () => {
   }, []);
 
   const settings = {
-    // dots: true,
     dots: true,
     infinite: true,
     speed: 1000,
@@ -139,7 +136,6 @@ const ClientReview = () => {
     </>
   );
 };
-// }
 
 export default ClientReview;
 

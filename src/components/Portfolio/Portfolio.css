@@ -40,6 +40,7 @@
         width: calc(25% - 10px);
         margin-bottom: 20px;
         box-sizing: border-box;
+        margin: auto;
       }
 
         /* display: flex;
@@ -87,6 +88,23 @@
         word-break: break-word;
       } 
 
+      .upvcBtn{
+        background-color: #f2f2f2;
+        font-size: 11px;
+        padding: 5px;
+        color: #000;
+        font-family: "Barlow",sans-serif;
+        font-weight: 600;
+        border: 1px solid #4CAF50;
+        
+      }
+
+      .upvcBtn:hover, .upvcBtn:focus {
+        background-color: #4CAF50;
+        color: #fff;
+        border: 1px solid #4CAF50;
+      }
+
       @media only screen and (max-width: 1020px) and (min-width: 768px)  {
       .itemSize{
         font-size: 8px !important;
@@ -109,13 +127,19 @@
       }
 
       @media only screen and (max-width: 1000px){
-        .filter-buttons button {
+
+        .filter-buttons {
           flex-direction: column;
           align-items: center;
         }
+        /* .filter-buttons button {
+          flex-direction: column;
+          align-items: center;
+        } */
+
         .dropdown-content{
           width: 200px !important;
-          z-index: -1;
+          /* z-index: -1; */
         }
       }
 
@@ -145,9 +169,16 @@
             height: 200px;
             width: 200px;
         }
+
+        .zoomImage{
+          width: 250px;
+          height: 300px;
+        }
+
+        /* upvc code title */
           .itemCode{
-            text-align: center !important;
-            margin-left: 25%;
+                    
           }
+          
       }
         

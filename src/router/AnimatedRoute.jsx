@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import HomePage from "../pages/HomePage";
-import ServicePage from "../pages/ServicePage";
 import PortfolioPage from "../pages/PortfolioPage";
 import ContactPage from "../pages/ContactPage";
 import AboutPage from "../pages/AboutPage";
@@ -16,10 +15,9 @@ import ChairmanMsgPage from "../pages/ChairmanMsgPage";
 import MdMsgPage from "../pages/MdMsgPage";
 import TeamMemberMessagePage from "../pages/TeamMemberMessagePage";
 import CorporateClientPage from "../pages/CorporateClientPage";
-import NewsDetailsPage from "../pages/NewsDetailsPgae";
-import PlasticPage from "../pages/PlasticPage";
 import ConcernPage from "../pages/ConcernPage";
 import GovtClientPage from "../pages/GovtClientPage";
+import Upvc1Page from "../pages/Upvc1Page";
 
 function AnimatedRoute() {
   const location = useLocation();
@@ -29,12 +27,10 @@ function AnimatedRoute() {
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/concern" element={<ConcernPage />} />
-          {/* <Route path="/client" element={<ClientPage />} /> */}
           <Route path="/career" element={<CareerPage />} />
           <Route path="/portfolio/gallery" element={<Gallery />} />
           <Route path="/portfolio/achievement" element={<AchievementPage />} />
@@ -59,8 +55,10 @@ function AnimatedRoute() {
             path="/about/Message/Details"
             element={<TeamMemberMessagePage />}
           />
-          <Route path="/news/newsDetails" element={<NewsDetailsPage />} />
-          <Route path="/concern/plastic" element={<PlasticPage />} />
+            <Route
+            path="/upvc1"
+            element={<Upvc1Page />}
+          />
         </Routes>
       </AnimatePresence>
     </>
