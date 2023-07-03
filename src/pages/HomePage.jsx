@@ -5,6 +5,7 @@ import { animateScroll } from "react-scroll";
 import Slider from "../components/Slider/Slider";
 import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 import NewsDetails from "../components/NewsDetails/NewsDetails";
+// import Slider2 from "../components/Slider2/Slider2";
 
 const HomePage = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const HomePage = () => {
 
       <TopNavigation title="Talukder Group" />
       <Slider />
+      {/* <Slider2 /> */}
       <NewsDetails />
       <Footer />
       <BackToTopButton /> 

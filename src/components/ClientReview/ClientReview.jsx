@@ -42,7 +42,8 @@ const ClientReview = () => {
     slidesToShow: 6,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 900,
+   // autoplaySpeed: 0,
+     autoplaySpeed: 900,
     pauseOnHover: false,
     cssEase: "ease-in-out",
     responsive: [
@@ -53,8 +54,7 @@ const ClientReview = () => {
           slidesToScroll: 1,
           swipeToSlide: true,
           infinite: true,
-          dots: true,
-        },
+          },
       },
       {
         breakpoint: 1100,
@@ -101,7 +101,7 @@ const ClientReview = () => {
         <Container style={{ marginTop: "5rem" }}>
           <Slider {...settings}>
             {corporateClientData.map((item, index) => (
-              <Col sm={12} md={6} lg={4} key={item.id}>
+              <Col className="clientCard" sm={12} md={6} lg={4} key={item.id}>
                 <Card
                   data-aos="fade-down"
                   style={{
@@ -118,12 +118,11 @@ const ClientReview = () => {
                   className="clientReviewImgCard"
                 >
                   <Card.Img
-                    style={{
-                      width: "80%",
-                      height: "80%",
-                      padding: "20px 10px",
-                    }}
-                    className="newsCardImg"
+                     style={{
+                       width: "90%",
+                       height: "90%",
+                       padding: "20px 10px",
+                     }}
                     variant="top"
                     src={item.img}
                   />

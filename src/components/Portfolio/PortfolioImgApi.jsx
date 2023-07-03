@@ -46,7 +46,7 @@ import tbl45 from "../../asset/images/office furniture/tbl45.jpg";
 import tbl46 from "../../asset/images/office furniture/tbl46.jpg";
 import tbl47 from "../../asset/images/office furniture/tbl47.jpg";
 import tbl48 from "../../asset/images/office furniture/tbl48.jpg";
-import tbl49 from "../../asset/images/office furniture/tbl49.jpg";
+import tbl49 from "../../asset/images/office furniture/tbl49.jpg"
 import tbl50 from "../../asset/images/office furniture/tbl50.jpg";
 import tbl51 from "../../asset/images/office furniture/tbl51.jpg";
 import tbl52 from "../../asset/images/office furniture/tbl52.jpg";
@@ -89,6 +89,7 @@ import con_table5 from "../../asset/images/Chair/conference table/conferenceTabl
 import con_table6 from "../../asset/images/Chair/conference table/conferenceTable06.jpg";
 import con_table7 from "../../asset/images/Chair/conference table/conferenceTable07.jpg";
 import con_table8 from "../../asset/images/Chair/conference table/conferenceTable08.jpg";
+
 
 // Chair Image
 import chair1 from "../../asset/images/Chair/01.jpg";
@@ -192,6 +193,7 @@ import chair93 from "../../asset/images/Chair/93.jpg";
 import chair94 from "../../asset/images/Chair/94.jpg";
 import chair95 from "../../asset/images/Chair/95.jpg";
 import chair96 from "../../asset/images/Chair/96.jpg";
+
 
 // Plastic image
 
@@ -324,7 +326,7 @@ import upvc2 from "../../asset/images/upvc/upvc2.JPG";
 import upvc3 from "../../asset/images/upvc/upvc3.JPG";
 import upvc4 from "../../asset/images/upvc/upvc4.JPG";
 import upvc5 from "../../asset/images/upvc/upvc5.JPG";
-import upvc6 from "../../asset/images/upvc/upvc6.JPG";
+import upvc6 from "../../asset/images/upvc/upvc6.JPG"
 // import upvc7 from "../../asset/images/upvc/upvc7.JPG";
 import upvc8 from "../../asset/images/upvc/upvc8.JPG";
 import upvc9 from "../../asset/images/upvc/upvc9.JPG";
@@ -1622,7 +1624,7 @@ const portfolioItems = [
     id: 574,
     title: "FILE CABINET",
     category: "lged",
-    code: "TFSFC-073",
+    code : "TFSFC-073",
     imgSrc: chair73,
     size: "L482 X W550 X H1370MM",
   },
@@ -1859,14 +1861,15 @@ const portfolioItems = [
   },
 
   ////                              ------------      PLASTIC  (101- )           --------------
-  {
-    id: 101,
-    title: "RECTANGULAR TABLE PLASTIC",
-    category: "PLASTIC FURNITURE",
-    code: "24106/24107/24108/24109",
-    color: "#ba5645/#336699/#4e2d26/#004d4d",
-    imgSrc: plastic1,
-  },
+  //      Image Valo nah
+  // {
+  //   id: 101,
+  //   title: "RECTANGULAR TABLE PLASTIC",
+  //   category: "PLASTIC FURNITURE",
+  //   code: "24106/24107/24108/24109",
+  //   color: "#ba5645/#336699/#4e2d26/#004d4d",
+  //   imgSrc: plastic1,
+  // },
   {
     id: 102,
     category: "PLASTIC FURNITURE",
@@ -1891,22 +1894,26 @@ const portfolioItems = [
     code: "24143/24144/24145",
     color: "#563933/#8c765a/#425247",
   },
-  {
-    id: 105,
-    category: "PLASTIC FURNITURE",
-    imgSrc: plastic5,
-    title: "SQUARE DECO TABLE PLASTIC",
-    code: "24116/24117/24118",
-    color: "#ba5645/#336699/#004d4d",
-  },
-  {
-    id: 106,
-    category: "PLASTIC FURNITURE",
-    imgSrc: plastic6,
-    title: "SQUARE DECO TABLE STEEL",
-    code: "24121/24122/24123/24124/24125",
-    color: "#ba5645/#336699/#4e2d26/#a6976f/#004d4d",
-  },
+  //    image valo nah
+  // {
+  //   id: 105,
+  //   category: "PLASTIC FURNITURE",
+  //   imgSrc: plastic5,
+  //   title: "SQUARE DECO TABLE PLASTIC",
+  //   code: "24116/24117/24118",
+  //   color: "#ba5645/#336699/#004d4d",
+  // },
+
+    //    image valo nah
+  // {
+  //   id: 106,
+  //   category: "PLASTIC FURNITURE",
+  //   imgSrc: plastic6,
+  //   title: "SQUARE DECO TABLE STEEL",
+  //   code: "24121/24122/24123/24124/24125",
+  //   color: "#ba5645/#336699/#4e2d26/#a6976f/#004d4d",
+  // },
+
   {
     id: 107,
     category: "PLASTIC HOUSEHOLD",
@@ -1964,14 +1971,15 @@ const portfolioItems = [
   },
 
   // CHAIR
-  {
-    id: 115,
-    category: "PLASTIC FURNITURE",
-    imgSrc: plastic15,
-    title: "T CLASSIC",
-    code: "24101/24102/24103",
-    color: "#ba5645/#336699/#9c8363",
-  },
+    //    image valo nah
+  // {
+  //   id: 115,
+  //   category: "PLASTIC FURNITURE",
+  //   imgSrc: plastic15,
+  //   title: "T CLASSIC",
+  //   code: "24101/24102/24103",
+  //   color: "#ba5645/#336699/#9c8363",
+  // },
   {
     id: 118,
     category: "PLASTIC FURNITURE",
@@ -2024,7 +2032,7 @@ const portfolioItems = [
     title: "SPOUT BUCKET",
     size: "16/20 Ltr.",
     code: "11350/11351/11356/11357",
-    color: "	 #0033cc/#cc00cc/#0033cc/#cc00cc",
+    color: "	 #0033cc/#cc00cc/#0033cc/#cc00cc"
   },
   {
     id: 122,
@@ -2033,7 +2041,7 @@ const portfolioItems = [
     title: "SPOUT BUCKET",
     size: "16/20 Ltr.",
     code: "11350/11351/11356/11357",
-    color: "#0033cc/#cc00cc/#0033cc/#cc00cc",
+    color: "#0033cc/#cc00cc/#0033cc/#cc00cc"
   },
   {
     id: 207,
@@ -2101,7 +2109,7 @@ const portfolioItems = [
     sameColor: "RED",
     size: "4,8,12,15,18,20,22,25,30 Ltr.",
   },
-
+  
   {
     id: 195,
     category: "PLASTIC HOUSEHOLD",
@@ -2132,7 +2140,7 @@ const portfolioItems = [
     size: "16, 20 Ltr.",
   },
 
-  ///                                BUCKET END
+  ///                                BUCKET END      
 
   {
     id: 123,
@@ -2441,8 +2449,7 @@ const portfolioItems = [
     category: "PLASTIC HOUSEHOLD",
     imgSrc: plastic66,
     title: "DELUX BOWL",
-    color:
-      "RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue",
+    color: "RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue/RED/Blue",
     code: "12165/12168/12171/12175/12180/12185/12188/12191/12195/12166/12169/12172/12176/12181/12186/12189/12192/12196",
     size: "3,5,8,10,15,20,25,30,35 Ltr.",
   },
@@ -2812,16 +2819,15 @@ const portfolioItems = [
     category: "lged",
     imgSrc: lged11,
   },
-  //   ///       //                                      upvc
+   //   //    //                                      upvc
   {
     id: 301,
     category: "upvc",
     title: "110mm Fittings",
     imgSrc: upvc1,
     button: "Details",
-    longCode:
-      "33490/33450/33451/33491/33492/33493/33400/33401/33402/33403/33405/33406/33408/33409/33411/33412/33413/33414",
-    longSize: '4" Plain Bend 90 FF/4" Plain Bend 45 FF/4" Plain Bend 45 MF',
+    longCode: "33490/33450/33451/33491/33492/33493/33400/33401/33402/33403/33405/33406/33408/33409/33411/33412/33413/33414",
+    longSize: '4" Plain Bend 90° FF/4" Plain Bend 45° FF/4" Plain Bend 45° MF/4" Black Door Bend 90°/4" Left Door Bend 90°/ 4" Right Door Bend 90°/ 4" Rlain Tee/ 4" Back Door Tee/ 4" Left Door Tee/4" Right Door Tee/ 4" Cross Tee/4" Cross Door Tee/4" U Trap/4" Long Trap/4" Off-Set/4" Pipe Clamp/ 4" Socket/ 4"x2" Reducing Bush '
   },
   {
     id: 302,
@@ -2830,7 +2836,7 @@ const portfolioItems = [
     imgSrc: upvc2,
     button: "Details",
     longCode: "34280/34281",
-    color: "white/pink",
+    longSize: "Wall Soap Case (White)/Wall Soap Case (Pink)",
   },
   {
     id: 303,
@@ -2838,13 +2844,9 @@ const portfolioItems = [
     imgSrc: upvc3,
     title: "Thread Pipe",
     button: "Details",
-    longCode:
-      "31019/31020/31022/31023/31025/31026/31028/31029/31031/31032/31034/31035",
-    longSize: `0.5"X10' Thread Pipe/0.5"X10' Thread Pipe/0.5"X10' Thread Pipe/0.5"X10' Thread Pipe `,
-    longColor:
-      "gray/green/gray/green/gray/green/gray/green/gray/green/gray/green",
-    longThickness:
-      "3.1~3.4/3.1~3.4/3.2~3.5/3.8~4.2/3.8~4.2/4.2~4.5/4.2~4.5/4.0~4.4/4.0~4.4/4.4~4.8/4.4~4.8",
+    longCode: "31019/31020/31022/31023/31025/31026/31028/31029/31031/31032/31034/31035",
+    longSize: `0.5"X10' Thread Pipe (Gray)/0.5"X10' Thread Pipe (Green)/0.75"X10' Thread Pipe (Gray)/0.75"X10' Thread Pipe (Green)/1"X10' Thread Pipe (Gray)/1"X10' Thread Pipe (Green)/1.25"X10' Thread Pipe (Gray)/1.25"X10' Thread Pipe (Green)/1.5"X10' Thread Pipe (Gray)/1.5"X10' Thread Pipe (Green)/2"X10' Thread Pipe (Gray)/2"X10' Thread Pipe (Green) `,
+    longThickness: "3.1~3.4/3.1~3.4/3.2~3.5/3.2~3.5/3.8~4.2/3.8~4.2/4.2~4.5/4.2~4.5/4.0~4.4/4.0~4.4/4.4~4.8/4.4~4.8",
   },
   {
     id: 304,
@@ -2852,23 +2854,30 @@ const portfolioItems = [
     imgSrc: upvc16,
     title: "Iso standard swr pipe",
     button: "Details",
-    // code2: "34100,34101,34111,34112,34121,34122,34151,34152,34161,34162,34171,34172,34181,34182,34186,34187,34191,34192,34200,34201,34221,34222,34231,34232"
+    longCode: "34100/34101/34111/34112/34121/34122/34151/34152/34161/34162/34171/34172/34181/34182/34186/34187/34191/34192/34200/34201/34221/34222/34231/34232",
+    longSize: `32mm x 3mtr SWR Pipe (Gray)/32mm x 3mtr SWR Pipe (White)/40mm x 3mtr SWR Pipe (Gray)/ 40mm x 3mtr SWR Pipe (White)/ 50mm x 3mtr SWR Pipe (Gray)/50mm x 3mtr SWR Pipe (White)/100mm x 6mtr SWR Pipe (Gray)/100mm x 6mtr SWR Pipe (White)/110mm x 6mtr SWR Pipe (Gray)/110mm x 6mtr SWR Pipe (White)//110mm x 6mtr SWR Pipe (Gray)/110mm x 6mtr SWR Pipe (White)/110mm x 6mtr SWR Pipe (Gray)/110mm x 6mtr SWR Pipe (White)/160mm x 6mtr SWR Pipe (Gray)/160mm x 6mtr SWR Pipe (White)/160mm x 6mtr SWR Pipe (Gray)//160mm x 6mtr SWR Pipe (White)/160mm x 6mtr SWR Pipe (Gray)/160mm x 6mtr SWR Pipe (White)/200mm x 6mtr SWR Pipe (Gray)/200mm x 6mtr SWR Pipe (White)/200mm x 6mtr SWR Pipe (Gray)/200mm x 6mtr SWR Pipe (White) `,
+    longThickness: `1.6~1.9/1.6~1.9/1.6~1.9/1.6~1.9/2.0~2.4/2.0~2.4/2.4~2.7/2.4~2.7/2.7~3.0/2.7~3.0/3.0~3.4/3.0~3.4/3.4~3.8/3.4~3.8/3.0~3.4/3.0~3.4/4.0~4.5/4.0~4.5/4.5~5.0/4.5~5.0/4.0~4.5/4.0~4.5/4.5~5.0/4.5~5.0`
+  
   },
   {
     id: 305,
     category: "upvc",
     imgSrc: upvc5,
     title: "Class pipe(continue)",
-    // code2: "31810,31815,32100,32105,32120,32125,32126,32140,32145,32160,32165,32180,32185"
     button: "Details",
+    longCode: "31810/31815/32100/32105/32120/32125/32126/32140/32145/32160/32165/32180/32185",
+    longSize: `8"x6 mtr BS Class D Pipe (Gray)/ 8"x6 mtr BS Class E Pipe (Gray)/10"x6 mtr BS Class B Pipe (Gray)/10"x6 mtr BS Class C Pipe (Gray)/12"x6 mtr BS Class B Pipe (Gray)/12"x6 mtr BS Class C Pipe (Gray)/12"x3 mtr BS Class C Pipe (Gray)/14"x6 mtr BS Class B Pipe (Gray)/14"x6 mtr BS Class C Pipe (Gray)/16"x6 mtr BS Class B Pipe (Gray)/16"x6 mtr BS Class C Pipe (Gray)/18"x6 mtr BS Class B Pipe (Gray)/18"x6 mtr BS Class C Pipe (Gray) `,
+    longThickness: `10.2~11.9/12.6~14.5/6.6~7.6/9.7~11.2/7.8~9.0/11.5~13.3/11.5~13.3/18.5~9.8/12.6~14.5/9.7~11.2/14.5~16.7/11.0~12.7/16.3~18.8`
   },
   {
     id: 306,
     category: "upvc",
     imgSrc: upvc6,
-    title: "Class Pipe",
+    title:"Class Pipe",
     button: "Details",
-    // code2:"31150,31151,31201,31205,31301,31305,31310,31315,31320,31401,31405,31415,31501,31505,31507,31605,31610,31615,31620,31801,31805"
+    longCode:"31150/31151/31201/31205/31301/31305/31310/31315/31320/31401/31405/31410/31415/31501/31505/31507/31605/31610/31615/31620/31801/31805",
+    longSize: `1.5"x15' BS Class D Pipe (Gray)/1.5"x15' BS Class D Pipe (White)/2"x15' BS Class C Pipe (Gray)/2"x15' BS Class D Pipe (Gray)/3"x6' BS Class B Pipe (Gray)/3"x3' BS Class B Pipe (White)/3"x6' BS Class C Pipe (Gray)/3"x6' BS Class D Pipe (Gray)/3"x6' BS Class E Pipe (Gray)/4"x6' BS Class B Pipe (Gray)/4"x6' BS Class C Pipe (Gray)/4"x6' BS Class D Pipe (Gray)/4"x6' BS Class E Pipe (Gray)/5"x6' BS Class B Pipe (Gray)/5"x6' BS Class C Pipe (Gray)/5"x6' BS Class D Pipe (Gray)/6"x6' BS Class B Pipe (Gray)/6"x6' BS Class C Pipe (Gray)/6"x6' BS Class D Pipe (Gray)/6"x6' BS Class E Pipe (Gray)/8"x6' BS Class B Pipe (Gray)/8"x6' BS Class C Pipe (Gray)`,
+    longThickness: `2.5~3.0/2.5~3.0/2.5~3.0/3.1~3.7/2.9~3.4/2.9~3.4/3.5~4.1/4.6~5.3/5.7~6.6/3.4~4.0/4.5~5.2/6.0~6.9/7.3~8.4/3.8~4.4/5.5~6.4/7.3~8.0/4.5~5.2/6.6~7.6/6.8~10.2/10.8~12.5/5.3~6.1/7.3~8.0`
   },
   //      code is not available
   // {
@@ -2880,75 +2889,93 @@ const portfolioItems = [
   {
     id: 308,
     category: "upvc",
-    imgSrc: upvc8,
-    // code2: "30216,30305,30300,30420,30425,30426,30430,30435,30510,30620",
     title: "Pipe cutting filter",
     button: "Details",
+    imgSrc: upvc8,
+    longCode: "30216/30305/30300/30420/30425/30426/30430/30435/30510/30620",
+    longSize: `2"x3 mtr Regular Super Filter (Gray)/3"x3 mtr Regular Super Filter (Firoza)/3"x3 mtr Shallow Filter (Firoza)/4"x3 mtr Shallow Filter (Firoza)/110mm x 3mtr SWR Filter (Gray)/110mm x 3mtr SWR Filter (White)/110mm x 3mtr SWR Filter (Gray)/110mm x 3mtr SWR Filter (White)/5"x3 mtr Regular Super Filter (Gray)/160mm x 3mtr SWR Filter (Gray) `,
+    longThickness: `2.2~2.5/2.4~2.6/2.0~2.2/2.5~2.7/2.7~3.0/2.7~3.0/3.0~3.4/3.4~3.8/3.4~3.7/4.0~4.5`
   },
   {
     id: 309,
     category: "upvc",
     imgSrc: upvc9,
-    // code2: "36340,36341,36452,36453,36455,36456,36458,36459,36540,31425,31426,31542,36823",
     title: "gold series pipe",
-    button: "Details",
+    longCode: "36340/36341/36452/36453/36455/36456/36458/36459/36540/31425/31426/31542/36823",
+    longSize: `3"x6 mtr Gold Pipe (Gray)/3"x6 mtr Gold Pipe (White)/110mmx6 mtr Gold Pipe (Gray)/110mmx6 mtr Gold Pipe (White)/110mmx6 mtr Gold Super Pipe (Gray)/110mmx6 mtr Gold Super Pipe (White)/110mmx6 mtr Gold Economic Pipe (Gray)/110mmx6 mtr Gold Economic Pipe (Gray)/5"x6 mtr Gold Pipe (Gray)/4"x6 mtr Popular Pipe (Gray)/4"x6 mtr Popular Pipe (White)/5"x6 mtr Popular Pipe (Gray)/200mmx6 mtr Gold Pipe (Gray)`,
+    longThickness: `2.2~2.5/2.2~2.5/2.8~3.1/2.8~3.1/2.2~2.5/2.2~2.5/1.9~2.0/1.9~2.0/3.2~3.5/2.8~3.0/2.7/3.5/2.8~3.0 `,
+    button: "Details"
   },
   {
     id: 310,
     category: "upvc",
     imgSrc: upvc10,
-    // code2:"37315,37316,37432,37433,37436,37437,37509,30424",
-    title: "gold series filter",
-    button: "Details",
+    longCode:"37315/37316/37432/37433/37436/37437/37509/30424",
+    longSize: `3"x3 mtr Gold Filter (Gray)/3"x3 mtr Gold Filter (White)/110mmx3mtr Gold Filter (Gray)/110mmx3mtr Gold Filter (White)/110mmx3mtr Gold Super Filter (Gray)/110mmx3mtr Gold Super Filter (White)/5"x3 mtr Gold Filter (Gray)/ 4"x3mtr Popular Filter (Gray) `,
+    longThickness: `2.2~2.5/2.2~2.5/2.8~3.1/2.8~3.1/2.2~2.5/2.2~2.5/3.2~3.5/2.8~3.0`,
+    title:"gold series filter",
+    button: "Details"
   },
   {
     id: 311,
     category: "upvc",
     imgSrc: upvc11,
-    // code2:"30150,30155,30160,30165,30170,30175,30180,37150,37155,37160",
+    longCode:"30150/30155/30160/30165/30170/30175/30180/37150/37155/37160",
+    longSize: `1.5" Filter #4 (6ft) Pink/1.5" Filter #4 (8ft) Pink/1.5" Filter #4 (10ft) Pink/1.5" Filter #6 (10ft) Pest/1.5" Filter #8 (10ft) Pest/1.5" Filter #10 (10ft) Gray/1.5" Filter Robo(6.5ft) Gray/1.5" T-7 Filter (6ft) Off White//1.5" T-7 Filter (8ft) Off White//1.5" T-7 Filter (9ft) Off White`,
+    longThickness: `1.3~1.5/1.3~1.5/1.3~1.5/1.9~2.1/2.4~2.6/2.7~3.0/2.5~3.0/1.2~1.4/1.2~1.4/1.2~1.4`,
     title: "Small Dia rib & robo filter",
-    button: "Details",
+    button: "Details"
   },
   {
     id: 312,
     category: "upvc",
     imgSrc: upvc12,
-    // code2: "30205,30210,30310,30315,30320,30325,30400,30405",
+    longCode: "30205/30210/30310/30315/30320/30325/30400/30405",
+    longSize: `2"x3 mtr BS Class C Filter (Gray)/2"x3 mtr BS Class D Filter (Gray)/3"x3 mtr BS Class B Filter (Gray)/3"x3 mtr BS Class C Filter (Gray)/3"x3 mtr BS Class D Filter (Gray)/3"x3 mtr BS Class E Filter (Gray)/4"x3 mtr BS Class B Filter (Gray)/4"x3 mtr BS Class C Filter (Gray)`,
+    longThickness: `2.5~3.0/3.1~3.7/2.9~3.4/3.5~4.4/4.6~5.3/5.7~6.6/3.4~4.0/4.5~5.2`,
     title: "pipe cutting class filter(bigger dia)",
-    button: "Details",
+    button: "Details"
   },
   {
     id: 313,
     category: "upvc",
     imgSrc: upvc13,
     title: "pipe cutting class filter(continue)",
-    // code2: "30410,30415,30500,30505,30508,30600,30605,30610,30615,30800,30801,30805,30806,30810,30815,30100,30103,30105,30106,30120,30125,30140,30145",
-    button: "Details",
+    longCode: "30410/30415/30500/30505/30508/30600/30605/30610/30615/30800/30801/30805/30806/30810/30815/30100/30103/30105/30106/30120/30125/30140/30145",
+    longSize: `4"x3 mtr BS Class D Filter (Gray)/4"x3 mtr BS Class E Filter (Gray)/5"x3 mtr BS Class B Filter (Gray)/5"x3 mtr BS Class C Filter (Gray)/5"x3 mtr BS Class D Filter (Gray)/6"x3 mtr BS Class B Filter (Gray)/6"x3 mtr BS Class C Filter (Gray)/6"x3 mtr BS Class D Filter (Gray)/6"x3 mtr BS Class E Filter (Gray)/8"x3 mtr BS Class B Filter (Gray)/8"x6 mtr BS Class B Filter (Gray)/8"x3 mtr BS Class C Filter (Gray)/8"x6 mtr BS Class C Filter (Gray)/8"x3 mtr BS Class D Filter (Gray)/8"x3 mtr BS Class E Filter (Gray)/10"x3 mtr BS Class B Filter (Gray)/10"x6 mtr BS Class B Filter (Gray)/10"x3 mtr BS Class C Filter (Gray)/10"x6 mtr BS Class C Filter (Gray)/12"x3 mtr BS Class B Filter (Gray)/12"x3 mtr BS Class C Filter (Gray)/14"x3 mtr BS Class B Filter (Gray)/14"x3 mtr BS Class C Filter (Gray)`,
+    longThickness: `6.0~6.9/7.3~8.4/3.8~4.4/5.5~6.4/7.3~8.0/4.5~5.2/6.6~7.6/8.8~10.2/10.8~12.5/5.3~6.1/5.3~6.1/7.8~9.0/7.8~9.0/10.2~11.9/12.6~14.5/16.6~7.6/6.6~7.6/9.7~11.2/9.7~11.2/7.8~9.0/11.5~13.3/8.5~9.5/12.6~14.5`,
+    button: "Details"
   },
   {
     id: 314,
     category: "upvc",
     imgSrc: upvc14,
     title: "standard pipe",
-    // code2: "31156,31161,31165,31166,31167,31175,31215,31216,31325,31330,31331,31335,31336,31420,31510,31525,31350",
-    button: "Details",
+    longCode: "31156/31161/31165/31166/31167/31175/31215/31216/31325/31330/31331/31335/31336/31420/31510/31525/31350",
+    longSize: `1.5"x15' TFL D Pipe (Gray)/1.5"x15' TFL D Pipe (White)/1.5"x15' Regular Super Pipe (Gray)/1.5"x15' Regular Super Pipe (White)/1.5"x15' Regular Super Pipe (Blue)/1.5"x15' Regular Super Pipe (Firoza)/2"x15' Regular Super Pipe (Gray)/2"x15' Regular Super Pipe (White)/3"x6mtr Regular Special Pipe (Firoza)/3"x6mtr Shallow Pipe (Firoza)/3"x15mtr Shallow Pipe (Firoza)/3"x6mtr Regular Super Pipe (Gray)/3"x6mtr Regular Super Pipe (White)/4"x6 mtr Shallow Pipe(Firoza)/5"x6 mtr Regular Super Pipe(Gray)/6"x6 mtr Shallow Pipe(Gray)/8"x6 mtr Regular Super Pipe(Gray)`,
+    longThickness: `2.2~2.4/2.2~2.4/1.4~1.6/1.4~1.6/1.4~1.6/1.4~1.6/2.2~2.5/2.2~2.5/2.4~2.6/2.0~2.2/2.0~2.2/2.4~2.6/2.4~2.6/2.5~2.7/3.5~3.7/4.0~4.3/2.8~3.1`,
+    button: "Details"
   },
   {
     id: 315,
     category: "upvc",
     imgSrc: upvc15,
     title: "Sanitary pipe",
-    // code2: "34123,34124,34131,34132,34141,34142,34184,34185,34211,34212",
-    button: "Details",
+    longCode: "34123/34124/34131/34132/34141/34142/34184/34185/34211/34212",
+    longSize: `86mmx6mtr Sanitary Pipe (Gray)/86mmx6mtr Sanitary Pipe (White)/110mmx6mtr Economic Sanitary Pipe (Gray)/110mmx6mtr Economic Sanitary Pipe (White)/110mmx6mtr Sanitary Pipe (Gray)/110mmx6mtr Sanitary Pipe (White)/160mmx6mtr Sanitary Pipe (Gray)/160mmx6mtr Sanitary Pipe (White)/200mmx6mtr Sanitary Pipe (Gray)/200mmx6mtr Sanitary Pipe (White)`,
+    longThickness: `1.6~1.8/1.6~1.8/1.6~1.8/1.6~1.8/2.6~2.4/2.6~2.4/2.7~3.0/2.7~3.0/3.0~3.4/3.0~3.4 `,
+    button: "Details"
   },
   {
     id: 316,
     category: "upvc",
     imgSrc: upvc4,
     title: "Tubewell",
-    // code2: "83101,83102,83103,83105,83107,83109,83110,83141,83112,83114,83115,83117,83124,83125"
-    button: "Details",
+    longCode: "83101/83102/83103/83105/83107/83109/83110/83141/83112/83114/83115/83117/83124/83125",
+    longSize: `Unicef | DPHE | Hyswa Tubwell/ Samrat TubeWell/Curve Popular Heavy TubeWell/Curve Popular Super TubeWell/Standard TubeWell/Super Straight TubeWell/Curve Popular Super TubeWell/ Mini Popular TubeWell/Mini Heavy TubeWell/ Mini Light TubeWell/Heavy TubeWell/Light Straight TubeWell/ BRDB | Tikader TubeWell (25.5-26kg)/BRDB | Tikader TubeWell (25.5-26kg) (Red)  `,
+    button: "Details"
   },
+ 
 ];
 
 export default portfolioItems;

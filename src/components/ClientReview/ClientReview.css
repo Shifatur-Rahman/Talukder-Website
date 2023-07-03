@@ -1,13 +1,23 @@
-
 .clientReviewImgCard {
   margin: 0 auto;
   float: none;
 }
 
+/* .clientCard:hover{
+  cursor: pointer;
+  margin-bottom: 5px;
+} */
+ 
+/* .clientReviewImgCard:hover{
+  height: 165px !important;
+  width: 145px !important;
+  cursor: pointer;
+  overflow: hidden !important;
+  z-index: 2;
+} */
+
 @media(max-width:480px){
   .clientReviewImgCard {
-    /* margin: 0 auto;
-    float: none; */
     margin-right: 30px !important;
   }
 }
