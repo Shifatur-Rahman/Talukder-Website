@@ -27,6 +27,7 @@ import gallery18 from "../../asset/images/gallery/gallery18.jpg";
 import "./ImgGallery.css";
 import Spinner from "../Spinner/Spinner.jsx";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { BlurhashCanvas } from "react-blurhash";
 
 const ImgGallery = () => {
   const itemData = [
@@ -143,7 +144,7 @@ const ImgGallery = () => {
             cols={4}
             gap={6}
           >
-            {itemData.map((item) => (
+            {/* {itemData.map((item) => (
               <ImageListItem
                 key={item.id}
                 onClick={() => handleImageClick(item)}
@@ -158,9 +159,31 @@ const ImgGallery = () => {
                   />
                 </div>
               </ImageListItem>
-            ))}
-          </ImageList>
 
+                ))} */}
+
+
+{itemData.map((item) => (
+  <ImageListItem
+    key={item.id}
+    onClick={() => handleImageClick(item)}
+  >
+    <div className="galleryImg">
+      <LazyLoadImage
+         src={`${item.img}?w=161&fit=crop&auto=format`} // Add "/compressed" to the image source URL
+      //  src={`https://ik.imagekit.io/jamesqquick/${item.img}`}
+        srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`} // Add "/compressed" to the image source URL
+       // srcSet={`https://ik.imagekit.io/jamesqquick/${item.img}`}
+       alt={item.title}
+        loading="lazy"
+        style={{ cursor: "pointer" }}
+      />
+    </div>
+  </ImageListItem>
+))}
+
+                </ImageList>
+          
           <Dialog open={Boolean(selectedImage)} onClose={handleDialogClose}>
             <DialogTitle>{selectedImage?.title}</DialogTitle>
             <DialogContent>
@@ -180,7 +203,7 @@ const ImgGallery = () => {
           </Dialog>
         </Container>
       )}
-    </>
+    </> 
   );
 };
 

@@ -18,6 +18,11 @@ import CorporateClientPage from "../pages/CorporateClientPage";
 import ConcernPage from "../pages/ConcernPage";
 import GovtClientPage from "../pages/GovtClientPage";
 import Upvc1Page from "../pages/Upvc1Page";
+import PlasticPage from "../pages/PlasticPage";
+import FoundryPage from "../pages/FoundryPage";
+import DistributionPage from "../pages/DistributionPage";
+import FurniturePage from "../pages/FurniturePage";
+import JEnterprisePage from "../pages/JEnterprisePage";
 
 function AnimatedRoute() {
   const location = useLocation();
@@ -55,10 +60,35 @@ function AnimatedRoute() {
             path="/about/Message/Details"
             element={<TeamMemberMessagePage />}
           />
+
             <Route
-            path="/upvc1"
+            path="/concern/plasticItem"
+            element={<PlasticPage />}
+          />
+          <Route
+            path="/concern/foundry"
+            element={<FoundryPage />}
+          />
+
+          <Route
+            path="/concern/upvc"
             element={<Upvc1Page />}
           />
+
+          <Route
+            path="/concern/distribution"
+            element={<DistributionPage />}
+          />
+             <Route
+            path="/concern/furniture"
+            element={<FurniturePage />}
+          />
+
+          <Route
+            path="/concern/j&j"
+            element={<JEnterprisePage />}
+          />
+
         </Routes>
       </AnimatePresence>
     </>
