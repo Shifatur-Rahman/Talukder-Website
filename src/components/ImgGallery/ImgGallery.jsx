@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { LazyLoadImage } from "react-lazy-load-image-component"; // lazy component
 import { Container } from "react-bootstrap";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -25,7 +26,6 @@ import gallery17 from "../../asset/images/gallery/gallery17.jpg";
 import gallery18 from "../../asset/images/gallery/gallery18.jpg";
 import "./ImgGallery.css";
 import Spinner from "../Spinner/Spinner.jsx";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ImgGallery = () => {
