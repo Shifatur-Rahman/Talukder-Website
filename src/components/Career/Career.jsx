@@ -14,10 +14,10 @@ const Career = () => {
       delay: 0, // values from 0 to 3000, with step 50ms
       easing: "ease", // default easing for AOS animations
       duration: 1500, // values from 0 to 3000, with step 50ms
-       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or
        once: false, // whether animation should happen only once - while scrolling down
        mirror: false, // whether elements should animate out while scrolling past them
-       startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+       startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should 
        animatedClassName: 'aos-animate', // class applied on animation
        initClassName: 'aos-init', // class applied after initialization
        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
@@ -57,13 +57,13 @@ const Career = () => {
             </Col>
           
             <Col sm={12} md={6} lg={4}>
-                <div>
+              <div>
                 <p data-aos="fade-down"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="1500" className='experience'>Choose a job you love, and you will never have to work a day in your life. —Confucius
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="500"
+                  data-aos-duration="1500" className='experience'>Choose a job you love, and you will never have to work a day in your life. —Confucius
                 </p>
-                </div>
+              </div>
             </Col>
         </Row>
 
@@ -233,19 +233,12 @@ export default Career
 </div>
         </Accordion.Body>
       </Accordion.Item>
-
-
-      
       <Accordion.Item eventKey="4">
         <Accordion.Header>Tender Sales</Accordion.Header>
         <Accordion.Body>
        <p style={{color:"red"}}>No Post Avaiable at now</p>
         </Accordion.Body>
       </Accordion.Item>
-
-
-
-
 
 
     </Accordion>
