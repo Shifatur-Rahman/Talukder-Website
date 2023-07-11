@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
 import PageTop from '../components/PageTop/PageTop'
 import Footer from '../components/Footer/Footer'
 import JEnterprise from '../components/JEnterprise/JEnterprise'
+import { animateScroll } from "react-scroll";
 
 const JEnterprisePage = () => {
+  useEffect(() => {
+    animateScroll.scrollToTop({
+      duration: 500,
+      smooth: "easeInOutQuart",
+    });
+  }, []);
   return (
     <>
 
@@ -17,4 +24,5 @@ const JEnterprisePage = () => {
   )
 }
 
-export default JEnterprisePage
+export default JEnterprisePage;
+

@@ -1,7 +1,10 @@
 .ManagementCard {
-  height: 250px;
+  height: 280px;
   margin-bottom: 20px;
   text-align: center;
+  box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
+  -webkit-box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
+  -moz-box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
 }
 
 .ManagementCard img {
@@ -48,6 +51,9 @@ li {
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 20px;
+  box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
+  -webkit-box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
+  -moz-box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
 }
 
 .award h2 {
@@ -72,12 +78,14 @@ li {
 }
 
 .awardList{
-  font-size: 13px;
+  font-size: 15px;
+  color: #595959;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .achievementCardImg {
   overflow: hidden;
-  cursor: pointer;
 }
 
 .achievementCardImg {
@@ -102,3 +110,9 @@ li {
     height: 300px;
   }
 }
+
+
+
+  /* box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
+  -webkit-box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67);
+  -moz-box-shadow: -5px 6px 18px -10px rgba(29, 111, 218, 0.67); */

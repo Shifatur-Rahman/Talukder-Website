@@ -17,7 +17,7 @@ const BoardOfDirector = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2600);
+    }, 3200);
   }, []);
 
   return (
@@ -235,9 +235,9 @@ const BoardOfDirector = () => {
                     <h2>Md. Asadullah</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
                     Sr. Manager <br />
-                    (Head of Finance & Legal)
+                    Head of Finance & Legal
                     </p>
-                    <p></p>
+             
                   </div>
 
                   <div className="socials" style={{ fontSize: "25px" }}>
@@ -292,6 +292,7 @@ const BoardOfDirector = () => {
                     <h2>Md. Monjurul Rowshon</h2>
                     <p style={{ fontSize: "12px" }} className="main-text-p">
                       Sr. Manager <br />
+                      Corporate Sales
                     </p>
                     <p></p>
                   </div>

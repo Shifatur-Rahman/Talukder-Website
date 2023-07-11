@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { LazyLoadImage } from "react-lazy-load-image-component"; // lazy component
+//import { LazyLoadImage } from "react-lazy-load-image-component"; // lazy component
 import { Container } from "react-bootstrap";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -27,93 +27,27 @@ import gallery18 from "../../asset/images/gallery/gallery18.jpg";
 import "./ImgGallery.css";
 import Spinner from "../Spinner/Spinner.jsx";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { BlurhashCanvas } from "react-blurhash";
+import { Blurhash } from "react-blurhash";
 
 const ImgGallery = () => {
-  const itemData = [
-    {
-      id: 1,
-      img: gallery1,
-      title: "Dhaka International Trade Fair",
-    },
 
-    {
-      id: 2,
-      img: gallery4,
-      title: "Customers Visit Our Showroom ",
-    },
-    {
-      id: 3,
-      img: gallery14,
-      title: "Customer Satisfiction",
-    },
-    {
-      id: 4,
-      img: gallery9,
-      title: "Talukder Plastic",
-    },
-    {
-      id: 5,
-      img: gallery5,
-      title: "uPVC Factory",
-    },
-    {
-      id: 6,
-      img: gallery6,
-      title: "Factory",
-    },
-    {
-      id: 7,
-      img: gallery7,
-      title: "Our Production",
-    },
-    {
-      id: 8,
-      img: gallery8,
-      title: "Goods are ready",
-    },
+  const [imgLoad, setImgLoad] = useState(false);
 
-    {
-      id: 9,
-      img: gallery10,
-      title: "Storage",
-    },
-    {
-      id: 10,
-      img: gallery17,
-      title: "Machine",
-    },
-    {
-      id: 11,
-      img: gallery11,
-      title: "uPVC Machine",
-    },
-    {
-      id: 12,
-      img: gallery12,
-      title: "uPVC Factory",
-    },
-    {
-      id: 13,
-      img: gallery13,
-      title: "Raw Materials",
-    },
-    {
-      id: 14,
-      img: gallery16,
-      title: "Jashore Depot",
-    },
-    {
-      id: 15,
-      img: gallery15,
-      title: "Our Goods",
-    },
-    {
-      id: 16,
-      img: gallery18,
-      title: "Our Benches",
-    },
-  ];
+  useEffect(() => {
+
+    const imgPromises = itemData.map((item) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve();
+        img.onerror = () => reject();
+        img.src = item.img;
+      });
+    });
+
+    Promise.all(imgPromises)
+      .then(() => setImgLoad(true))
+      .catch(() => setImgLoad(true));
+  }, []);
 
   const [selectedImage, setSelectedImage] = React.useState(null);
   const handleImageClick = (item) => {
@@ -128,7 +62,7 @@ const ImgGallery = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2600);
+    }, 3700);
   }, []);
 
   return (
@@ -137,53 +71,57 @@ const ImgGallery = () => {
         <Spinner />
       ) : (
         <Container style={{ marginTop: "5rem" }}>
-          <ImageList
-            className="ImageGallery"
-            sx={{ width: "100%", height: "auto", overflow: "hidden" }}
-            variant="woven"
-            cols={4}
-            gap={6}
-          >
-            
-            {/* {itemData.map((item) => (
-              <ImageListItem
-                key={item.id}
-                onClick={() => handleImageClick(item)}
+            <div   
+            data-aos="fade-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000">
+              <ImageList
+                className="ImageGallery"
+                sx={{ width: "100%", height: "auto", overflow: "hidden" }}
+                variant="woven"
+                cols={4}
+              //gap={6}
               >
-                <div className="galleryImg">
-                  <LazyLoadImage
-                    src={`${item.img}?w=161&fit=crop&auto=format`}
-                    srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                    alt={item.title}
-                    loading="lazy"
-                    style={{ cursor: "pointer" }}
-                  />
-                </div>
-              </ImageListItem>
-
-                ))} */}
-
-
-              {itemData.map((item) => (
-                <ImageListItem
-                  key={item.id}
-                  onClick={() => handleImageClick(item)}
-                >
-                  <div className="galleryImg">
+                {itemData.map((item) => (
+                  <ImageListItem style={{ cursor: "pointer" }}
+                    key={item.img}
+                    onClick={() => handleImageClick(item)}
+                  >
+                    {imgLoad ? (
+                      <img
+                        src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                        srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.title}
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div style={{ width: "100%", height: "100%" }}>
+                        <Blurhash
+                          hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
+                          //  width={200}
+                          //  height={300}
+                          resolutionX={32}
+                          resolutionY={32}
+                          punch={1}
+                        />
+                      </div>
+                    )}
+                    {/* <div className="galleryImg">
                     <LazyLoadImage
-                      src={`${item.img}/compressed?w=161&fit=crop&auto=format`} // Add "/compressed" to the image source URL
-                      //  src={`https://ik.imagekit.io/jamesqquick/${item.img}`}
-                      srcSet={`${item.img}/compressed?w=161&fit=crop&auto=format&dpr=2 2x`} // Add "/compressed" to the image source URL
-                      // srcSet={`https://ik.imagekit.io/jamesqquick/${item.img}`}
+                      src={`${item.img}?w=161&fit=crop&auto=format`}
+                      srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`} 
                       alt={item.title}
                       loading="lazy"
                       style={{ cursor: "pointer" }}
                     />
-                  </div>
-                </ImageListItem>
-              ))}
+                  </div> */}
+                  </ImageListItem>
+                ))}
 
-                </ImageList>
+              </ImageList>
+            </div>
+     
           
             <Dialog open={Boolean(selectedImage)} onClose={handleDialogClose}>
               <DialogTitle>{selectedImage?.title}</DialogTitle>
@@ -202,10 +140,144 @@ const ImgGallery = () => {
                 />
               </DialogContent>
             </Dialog>
+
         </Container>
       )}
-    </> 
+    </>
   );
 };
 
 export default ImgGallery;
+
+
+const itemData = [
+  {
+    id: 1,
+    img: gallery1,
+    title: "Dhaka International Trade Fair",
+  },
+
+  {
+    id: 2,
+    img: gallery4,
+    title: "Customers Visit Our Showroom ",
+  },
+  {
+    id: 3,
+    img: gallery14,
+    title: "Customer Satisfiction",
+  },
+  {
+    id: 4,
+    img: gallery9,
+    title: "Talukder Plastic",
+  },
+  {
+    id: 5,
+    img: gallery5,
+    title: "uPVC Factory",
+  },
+  {
+    id: 6,
+    img: gallery6,
+    title: "Factory",
+  },
+  {
+    id: 7,
+    img: gallery7,
+    title: "Our Production",
+  },
+  {
+    id: 8,
+    img: gallery8,
+    title: "Goods are ready",
+  },
+
+  {
+    id: 9,
+    img: gallery10,
+    title: "Storage",
+  },
+  {
+    id: 10,
+    img: gallery17,
+    title: "Machine",
+  },
+  {
+    id: 11,
+    img: gallery11,
+    title: "uPVC Machine",
+  },
+  {
+    id: 12,
+    img: gallery12,
+    title: "uPVC Factory",
+  },
+  {
+    id: 13,
+    img: gallery13,
+    title: "Raw Materials",
+  },
+  {
+    id: 14,
+    img: gallery16,
+    title: "Jashore Depot",
+  },
+  {
+    id: 15,
+    img: gallery15,
+    title: "Our Goods",
+  },
+  {
+    id: 16,
+    img: gallery18,
+    title: "Our Benches",
+  },
+];
+
+
+
+   {/* <ImageList
+            className="ImageGallery"
+            sx={{ width: "100%", height: "auto", overflow: "hidden" }}
+            variant="woven"
+            cols={4}
+            gap={6}
+          >
+              {itemData.map((item) => (
+                <ImageListItem
+                  key={item.id}
+                  onClick={() => handleImageClick(item)}
+                >
+                  <div className="galleryImg">
+                    <LazyLoadImage
+                      src={`${item.img}/compressed?w=161&fit=crop&auto=format`} // Add "/compressed" to the image source URL
+                      srcSet={`${item.img}/compressed?w=161&fit=crop&auto=format&dpr=2 2x`} // Add "/compressed" to the image source URL
+                      alt={item.title}
+                      loading="lazy"
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                </ImageListItem>
+              ))}
+
+                </ImageList> */}
+
+
+            {/* {itemData.map((item) => (
+              <ImageListItem
+                key={item.id}
+                onClick={() => handleImageClick(item)}
+              >
+                <div className="galleryImg">
+                  <LazyLoadImage
+                    src={`${item.img}?w=161&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading="lazy"
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+              </ImageListItem>
+
+                ))} */}
