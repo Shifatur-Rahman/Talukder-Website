@@ -1,0 +1,65 @@
+.topFixedPage {
+  background-image: url(../../asset/images/Banner/banner.jpg);
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow: -2px -3px 41px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -3px 41px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -3px 41px -1px rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 5% 2%;
+  border-bottom-right-radius: 5% 2%;
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+}
+
+.topPageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 5% 2%;
+  border-bottom-right-radius: 5% 2%;
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+} 
+
+ /* border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 12%; */
+
+
+
+.pageContent {
+  width: 700px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topPageSubTitle {
+  font-family: "Raleway", sans-serif;
+  /* letter-spacing: 2px; */
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  /* margin-left: 5rem; */
+}
+
+.mainTitle{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #526D82;
+}
+
+
+@media (max-width: 780px) {
+  .topPageSubTitle {
+    font-size: 20px;
+  }
+}
